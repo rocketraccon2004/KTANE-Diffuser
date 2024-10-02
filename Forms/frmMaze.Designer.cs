@@ -473,7 +473,6 @@ partial class frmMaze
         Margin = new Padding(4);
         Name = "frmMaze";
         Text = "Maze";
-        FormClosed += this.frmMaze_FormClosed;
         ResumeLayout(false);
     }
 

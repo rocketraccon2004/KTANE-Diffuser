@@ -1,6 +1,6 @@
 ﻿namespace KTANE_Diffuser_Winforms.Forms;
 
-public partial class frmButton : Form
+public partial class frmButton : ModuleForm
 {
     public frmButton()
     {
@@ -51,27 +51,24 @@ public partial class frmButton : Form
             holdButton();
         }
 
-        Program.switchForm(new frmMain());
+        Program.switchForm(Utils.getMainForm());
     }
 
     private void pressAndReleaseButton()
     {
         MessageBox.Show("Press and immediately release the button", "Button answer");
+        Program.switchForm(Utils.getMainForm());
     }
 
     private void holdButton()
     {
         MessageBox.Show(
             "Hold the button \nBlue Strip: Release when 4 in any position on timer \nYellow Strip: Release when 5 in any position on timer \nElse: Release when 1 in any position on timer", "Button answer");
-    }
-
-    private void frmButton_FormClosing(object sender, FormClosingEventArgs e)
-    {
-        Application.Exit();
+        Program.switchForm(Utils.getMainForm());
     }
 
     private void button2_Click(object sender, EventArgs e)
     {
-        Program.switchForm(new frmMain());
+        Program.switchForm(Utils.getMainForm());
     }
 }

@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 
 namespace KTANE_Diffuser_Winforms.Forms;
 
-public partial class frmMorseCode : Form
+public partial class frmMorseCode : ModuleForm
 {
     public frmMorseCode()
     {
@@ -12,7 +12,7 @@ public partial class frmMorseCode : Form
 
     private void btnBack_Click(object sender, EventArgs e)
     {
-        Program.switchForm(new frmMain());
+        Program.switchForm(Utils.getMainForm());
     }
 
     private void btnStrike_Click(object sender, EventArgs e)
@@ -48,6 +48,7 @@ public partial class frmMorseCode : Form
     private void btnSolve_Click(object sender, EventArgs e)
     {
         MessageBox.Show($"Tune to {WordsDict[comboBox1.Text]} MHz");
+        Program.switchForm(Utils.getMainForm());
     }
 
     private void frmMorseCode_Load(object sender, EventArgs e)
@@ -75,10 +76,5 @@ public partial class frmMorseCode : Form
                 Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
             }
         }
-    }
-
-    private void frmMorseCode_FormClosed(object sender, FormClosedEventArgs e)
-    {
-        Application.Exit();
     }
 }

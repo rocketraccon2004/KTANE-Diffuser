@@ -256,7 +256,6 @@ partial class frmWires
             this.Controls.Add(this.label1);
             this.Name = "frmWires";
             this.Text = "Wires";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmWires_FormClosing);
             this.ResumeLayout(false);
 
     }

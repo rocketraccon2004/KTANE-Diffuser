@@ -131,7 +131,6 @@ partial class frmComplicatedWires
         Controls.Add(btnSolve);
         Name = "frmComplicatedWires";
         Text = "Complicated Wires";
-        FormClosed += frmComplicatedWires_FormClosed;
         ResumeLayout(false);
         PerformLayout();
     }

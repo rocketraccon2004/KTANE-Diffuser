@@ -1,6 +1,6 @@
 ﻿namespace KTANE_Diffuser_Winforms.Forms;
 
-public partial class frmMazeAnswer : Form
+public partial class frmMazeAnswer : ModuleForm
 {
     List<Maze.Coordinate> correctSpots;
 
@@ -106,7 +106,7 @@ public partial class frmMazeAnswer : Form
 
     private void okButton_Click(object sender, EventArgs e)
     {
-        Program.switchForm(new frmMain());
+        Program.switchForm(Utils.getMainForm());
     }
 
     private Image GetImage(int row, int column)

@@ -2,7 +2,8 @@
 
 namespace KTANE_Diffuser_Winforms.Forms;
 
-public partial class frmEdgeworkMode : Form
+#pragma warning disable CS8604 // Possible null reference argument.
+public partial class frmEdgeworkMode : ModuleForm
 {
     public frmEdgeworkMode()
     {
@@ -20,12 +21,12 @@ public partial class frmEdgeworkMode : Form
         }
         Assistant.instance.bomb = JsonConvert.DeserializeObject<Bomb>(json);
         sr.Close();
-        Program.switchForm(new frmMain());
+        Program.switchForm(Utils.getMainForm());
     }
 
     private void manualButton_Click(object sender, EventArgs e)
     {
-        Program.switchForm(new frmEdgeworkInput());
+        Program.switchForm(Utils.SelectModuleForm("Edgework Input"));
     }
 
     private void frmEdgeworkSelection_Load(object sender, EventArgs e)

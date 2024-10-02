@@ -146,7 +146,6 @@ partial class frmMemory
         Controls.Add(btnSolve);
         Name = "frmMemory";
         Text = "Memory";
-        FormClosing += frmMemory_FormClosing;
         Load += frmMemory_Load;
         ResumeLayout(false);
         PerformLayout();

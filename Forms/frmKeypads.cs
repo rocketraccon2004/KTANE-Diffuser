@@ -1,6 +1,6 @@
 ﻿namespace KTANE_Diffuser_Winforms.Forms;
 
-public partial class frmKeypads : Form
+public partial class frmKeypads : ModuleForm
 {
     //the name of the selected images
     private string image1Name;
@@ -290,7 +290,7 @@ public partial class frmKeypads : Form
 
     private void backButton_Click(object sender, EventArgs e)
     {
-        Program.switchForm(new frmMain());
+        Program.switchForm(Utils.getMainForm());
     }
 
     private void submitButton_Click(object sender, EventArgs e)
@@ -323,6 +323,7 @@ public partial class frmKeypads : Form
         {
             MessageBox.Show("Can't find solution", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+        Program.switchForm(Utils.getMainForm());
     }
 
     private void strikeButton_Click(object sender, EventArgs e)
@@ -380,10 +381,5 @@ public partial class frmKeypads : Form
         ];
 
         return $"Order: {ordered[0]}, {ordered[1]}, {ordered[2]}, {ordered[3]}";
-    }
-
-    private void frmKeypads_FormClosed(object sender, FormClosedEventArgs e)
-    {
-        Application.Exit();
     }
 }

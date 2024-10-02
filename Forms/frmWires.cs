@@ -1,6 +1,6 @@
 ﻿namespace KTANE_Diffuser_Winforms.Forms;
 
-public partial class frmWires : Form
+public partial class frmWires : ModuleForm
 {
     private string[] wires;
 
@@ -9,12 +9,7 @@ public partial class frmWires : Form
         InitializeComponent();
     }
 
-    private void frmWires_FormClosing(object sender, FormClosingEventArgs e)
-    {
-        Application.Exit();
-    }
-
-    private void btnSolve_Click(object sender, EventArgs e)
+        private void btnSolve_Click(object sender, EventArgs e)
     {
         wires = new string[]
         {
@@ -43,7 +38,7 @@ public partial class frmWires : Form
             MessageBox.Show(solve(6));
         }
 
-
+        Program.switchForm(Utils.getMainForm());
     }
 
     public string solve(int noWires)
@@ -216,6 +211,6 @@ public partial class frmWires : Form
 
     private void button2_Click(object sender, EventArgs e)
     {
-        Program.switchForm(new frmMain());
+        Program.switchForm(Utils.getMainForm());
     }
 }

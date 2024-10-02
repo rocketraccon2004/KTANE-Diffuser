@@ -1,6 +1,6 @@
 ﻿namespace KTANE_Diffuser_Winforms.Forms;
 
-public partial class frmSimon : Form
+public partial class frmSimon : ModuleForm
 {
     public frmSimon()
     {
@@ -9,7 +9,7 @@ public partial class frmSimon : Form
 
     private void backButton_Click(object sender, EventArgs e)
     {
-        Program.switchForm(new frmMain());
+        Program.switchForm(Utils.getMainForm());
     }
 
     private void solveRound1(object sender, EventArgs e)
@@ -182,10 +182,5 @@ public partial class frmSimon : Form
             return;
         }
         Assistant.instance.strikes++;
-    }
-
-    private void frmSimon_FormClosed(object sender, FormClosedEventArgs e)
-    {
-        Application.Exit();
     }
 }

@@ -128,7 +128,6 @@ partial class frmMorseCode
         Margin = new Padding(4, 5, 4, 5);
         Name = "frmMorseCode";
         Text = "Morse Code";
-        FormClosed += frmMorseCode_FormClosed;
         Load += frmMorseCode_Load;
         ResumeLayout(false);
         PerformLayout();

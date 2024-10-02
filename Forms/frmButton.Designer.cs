@@ -136,7 +136,6 @@ partial class frmButton
             this.Controls.Add(this.dropDownColour);
             this.Name = "frmButton";
             this.Text = "Button";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmButton_FormClosing);
             this.ResumeLayout(false);
 
     }

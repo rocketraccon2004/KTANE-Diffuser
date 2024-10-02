@@ -2,7 +2,8 @@ using Newtonsoft.Json;
 
 namespace KTANE_Diffuser_Winforms.Forms;
 
-public partial class frmMain : Form
+#pragma warning disable CS8604 // Possible null reference argument.
+public partial class frmMain : ModuleForm
 {
     public frmMain()
     {
@@ -25,24 +26,24 @@ public partial class frmMain : Form
         File.WriteAllText("Edgework.json", json);
     }
 
-    private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
-    {
-        Application.Exit();
-    }
-
     private void btnChangeEdgework_Click(object sender, EventArgs e)
     {
         Assistant.instance.strikes = 0;
-        Program.switchForm(new frmEdgeworkInput());
+        Program.switchForm(Utils.SelectModuleForm("Edgework Input"));
     }
 
     private void btnStrike_click(object sender, EventArgs e)
     {
+        if (ModifierKeys.HasFlag(Keys.Shift))
+        {
+            Assistant.instance.strikes--;
+            return;
+        }
         Assistant.instance.strikes++;
     }
 
     private void btnSelect_Click(object sender, EventArgs e)
     {
-        Assistant.instance.SelectModule(dropDownModules.SelectedItem.ToString());
+        Program.switchForm(Utils.SelectModuleForm(dropDownModules.Text));
     }
 }

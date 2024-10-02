@@ -1,6 +1,6 @@
 ﻿namespace KTANE_Diffuser_Winforms.Forms;
 
-public partial class frmComplicatedWires : Form
+public partial class frmComplicatedWires : ModuleForm
 {
     private string cut = "Cut";
     private string dont = "Don't Cut";
@@ -11,7 +11,7 @@ public partial class frmComplicatedWires : Form
 
     private void btnBack_Click(object sender, EventArgs e)
     {
-        Program.switchForm(new frmMain());
+        Program.switchForm(Utils.getMainForm());
     }
 
     private void btnStrike_Click(object sender, EventArgs e)
@@ -113,10 +113,5 @@ public partial class frmComplicatedWires : Form
             return cut;
         }
         return "Error";
-    }
-
-    private void frmComplicatedWires_FormClosed(object sender, FormClosedEventArgs e)
-    {
-        Application.Exit();
     }
 }

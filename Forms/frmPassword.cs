@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace KTANE_Diffuser_Winforms.Forms
 {
-    public partial class frmPassword : Form
+    public partial class frmPassword : ModuleForm
     {
         public frmPassword()
         {
@@ -110,7 +110,7 @@ namespace KTANE_Diffuser_Winforms.Forms
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            Program.switchForm(new frmMain());
+            Program.switchForm(Utils.getMainForm());
         }
 
         private void btnStrike_Click(object sender, EventArgs e)
@@ -171,11 +171,7 @@ namespace KTANE_Diffuser_Winforms.Forms
             ];
 
             MessageBox.Show(Solve());
-        }
-
-        private void frmPassword_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
+            Program.switchForm(Utils.getMainForm());
         }
     }
 }

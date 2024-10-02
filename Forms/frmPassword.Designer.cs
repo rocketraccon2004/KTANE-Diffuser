@@ -439,7 +439,6 @@
             Controls.Add(label1);
             Name = "frmPassword";
             Text = "frmPassword";
-            FormClosed += frmPassword_FormClosed;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -1,6 +1,6 @@
 ﻿namespace KTANE_Diffuser_Winforms.Forms;
 
-public partial class frmKnob : Form
+public partial class frmKnob : ModuleForm
 {
     public frmKnob()
     {
@@ -9,7 +9,7 @@ public partial class frmKnob : Form
 
     private void btnBack_Click(object sender, EventArgs e)
     {
-        Program.switchForm(new frmMain());
+        Program.switchForm(Utils.getMainForm());
     }
 
     private void btnStrike_Click(object sender, EventArgs e)
@@ -72,5 +72,7 @@ public partial class frmKnob : Form
         {
             MessageBox.Show("Right");
         }
+
+        Program.switchForm(Utils.getMainForm());
     }
 }

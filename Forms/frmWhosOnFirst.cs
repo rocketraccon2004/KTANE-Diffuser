@@ -1,6 +1,6 @@
 ﻿namespace KTANE_Diffuser_Winforms.Forms;
 
-public partial class frmWhosOnFirst : Form
+public partial class frmWhosOnFirst : ModuleForm
 {
     private Dictionary<string, string> solutions = new Dictionary<string, string>();
     public frmWhosOnFirst()
@@ -10,7 +10,7 @@ public partial class frmWhosOnFirst : Form
 
     private void backButton_Click(object sender, EventArgs e)
     {
-        Program.switchForm(new frmMain());
+        Program.switchForm(Utils.getMainForm());
     }
 
     private void strikeButton_Click(object sender, EventArgs e)

@@ -121,7 +121,6 @@ partial class frmMain
         Margin = new Padding(4, 5, 4, 5);
         Name = "frmMain";
         Text = "KTANE Assistant";
-        FormClosing += frmMain_FormClosing;
         Load += frmMain_Load;
         ResumeLayout(false);
     }

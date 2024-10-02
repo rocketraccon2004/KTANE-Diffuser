@@ -1,5 +1,5 @@
 ﻿namespace KTANE_Diffuser_Winforms.Forms;
-public partial class frmWireSequences : Form
+public partial class frmWireSequences : ModuleForm
 {
     private int _redWires;
     private int _blueWires;
@@ -118,6 +118,6 @@ public partial class frmWireSequences : Form
 
     private void btnBack_Click(object sender, EventArgs e)
     {
-        Program.switchForm(new frmMain());
+        Program.switchForm(Utils.getMainForm());
     }
 }

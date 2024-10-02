@@ -67,10 +67,10 @@ partial class frmKeypads
         // strikeButton
         // 
         strikeButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        strikeButton.Location = new Point(264, 482);
-        strikeButton.Margin = new Padding(4);
+        strikeButton.Location = new Point(377, 803);
+        strikeButton.Margin = new Padding(6, 7, 6, 7);
         strikeButton.Name = "strikeButton";
-        strikeButton.Size = new Size(141, 51);
+        strikeButton.Size = new Size(201, 85);
         strikeButton.TabIndex = 71;
         strikeButton.Text = "Strike";
         strikeButton.UseVisualStyleBackColor = true;
@@ -79,10 +79,10 @@ partial class frmKeypads
         // submitButton
         // 
         submitButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        submitButton.Location = new Point(513, 482);
-        submitButton.Margin = new Padding(4);
+        submitButton.Location = new Point(733, 803);
+        submitButton.Margin = new Padding(6, 7, 6, 7);
         submitButton.Name = "submitButton";
-        submitButton.Size = new Size(141, 51);
+        submitButton.Size = new Size(201, 85);
         submitButton.TabIndex = 70;
         submitButton.Text = "Submit";
         submitButton.UseVisualStyleBackColor = true;
@@ -91,10 +91,10 @@ partial class frmKeypads
         // backButton
         // 
         backButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        backButton.Location = new Point(11, 482);
-        backButton.Margin = new Padding(4);
+        backButton.Location = new Point(16, 803);
+        backButton.Margin = new Padding(6, 7, 6, 7);
         backButton.Name = "backButton";
-        backButton.Size = new Size(141, 51);
+        backButton.Size = new Size(201, 85);
         backButton.TabIndex = 69;
         backButton.Text = "Back";
         backButton.UseVisualStyleBackColor = true;
@@ -102,288 +102,288 @@ partial class frmKeypads
         // 
         // swirlButton
         // 
-        swirlButton.Location = new Point(298, 375);
-        swirlButton.Margin = new Padding(4);
+        swirlButton.Location = new Point(426, 625);
+        swirlButton.Margin = new Padding(6, 7, 6, 7);
         swirlButton.Name = "swirlButton";
-        swirlButton.Size = new Size(66, 70);
+        swirlButton.Size = new Size(94, 117);
         swirlButton.TabIndex = 68;
         swirlButton.UseVisualStyleBackColor = true;
         // 
         // tridentButton
         // 
-        tridentButton.Location = new Point(371, 375);
-        tridentButton.Margin = new Padding(4);
+        tridentButton.Location = new Point(530, 625);
+        tridentButton.Margin = new Padding(6, 7, 6, 7);
         tridentButton.Name = "tridentButton";
-        tridentButton.Size = new Size(66, 70);
+        tridentButton.Size = new Size(94, 117);
         tridentButton.TabIndex = 67;
         tridentButton.UseVisualStyleBackColor = true;
         // 
         // unfinishedRButton
         // 
-        unfinishedRButton.Location = new Point(444, 375);
-        unfinishedRButton.Margin = new Padding(4);
+        unfinishedRButton.Location = new Point(634, 625);
+        unfinishedRButton.Margin = new Padding(6, 7, 6, 7);
         unfinishedRButton.Name = "unfinishedRButton";
-        unfinishedRButton.Size = new Size(66, 70);
+        unfinishedRButton.Size = new Size(94, 117);
         unfinishedRButton.TabIndex = 66;
         unfinishedRButton.UseVisualStyleBackColor = true;
         // 
         // whiteStarButton
         // 
-        whiteStarButton.Location = new Point(518, 375);
-        whiteStarButton.Margin = new Padding(4);
+        whiteStarButton.Location = new Point(740, 625);
+        whiteStarButton.Margin = new Padding(6, 7, 6, 7);
         whiteStarButton.Name = "whiteStarButton";
-        whiteStarButton.Size = new Size(66, 70);
+        whiteStarButton.Size = new Size(94, 117);
         whiteStarButton.TabIndex = 65;
         whiteStarButton.UseVisualStyleBackColor = true;
         // 
         // squidButton
         // 
-        squidButton.Location = new Point(224, 375);
-        squidButton.Margin = new Padding(4);
+        squidButton.Location = new Point(320, 625);
+        squidButton.Margin = new Padding(6, 7, 6, 7);
         squidButton.Name = "squidButton";
-        squidButton.Size = new Size(66, 70);
+        squidButton.Size = new Size(94, 117);
         squidButton.TabIndex = 64;
         squidButton.UseVisualStyleBackColor = true;
         // 
         // xButton
         // 
-        xButton.Location = new Point(592, 375);
-        xButton.Margin = new Padding(4);
+        xButton.Location = new Point(846, 625);
+        xButton.Margin = new Padding(6, 7, 6, 7);
         xButton.Name = "xButton";
-        xButton.Size = new Size(66, 70);
+        xButton.Size = new Size(94, 117);
         xButton.TabIndex = 63;
         xButton.UseVisualStyleBackColor = true;
         // 
         // smilyFaceButton
         // 
-        smilyFaceButton.Location = new Point(150, 375);
-        smilyFaceButton.Margin = new Padding(4);
+        smilyFaceButton.Location = new Point(214, 625);
+        smilyFaceButton.Margin = new Padding(6, 7, 6, 7);
         smilyFaceButton.Name = "smilyFaceButton";
-        smilyFaceButton.Size = new Size(66, 70);
+        smilyFaceButton.Size = new Size(94, 117);
         smilyFaceButton.TabIndex = 62;
         smilyFaceButton.UseVisualStyleBackColor = true;
         // 
         // questionMarkButton
         // 
-        questionMarkButton.Location = new Point(77, 375);
-        questionMarkButton.Margin = new Padding(4);
+        questionMarkButton.Location = new Point(110, 625);
+        questionMarkButton.Margin = new Padding(6, 7, 6, 7);
         questionMarkButton.Name = "questionMarkButton";
-        questionMarkButton.Size = new Size(66, 70);
+        questionMarkButton.Size = new Size(94, 117);
         questionMarkButton.TabIndex = 61;
         questionMarkButton.UseVisualStyleBackColor = true;
         // 
         // paragraphButton
         // 
-        paragraphButton.Location = new Point(4, 375);
-        paragraphButton.Margin = new Padding(4);
+        paragraphButton.Location = new Point(6, 625);
+        paragraphButton.Margin = new Padding(6, 7, 6, 7);
         paragraphButton.Name = "paragraphButton";
-        paragraphButton.Size = new Size(66, 70);
+        paragraphButton.Size = new Size(94, 117);
         paragraphButton.TabIndex = 60;
         paragraphButton.UseVisualStyleBackColor = true;
         // 
         // lambdaButton
         // 
-        lambdaButton.Location = new Point(298, 297);
-        lambdaButton.Margin = new Padding(4);
+        lambdaButton.Location = new Point(426, 495);
+        lambdaButton.Margin = new Padding(6, 7, 6, 7);
         lambdaButton.Name = "lambdaButton";
-        lambdaButton.Size = new Size(66, 70);
+        lambdaButton.Size = new Size(94, 117);
         lambdaButton.TabIndex = 59;
         lambdaButton.UseVisualStyleBackColor = true;
         // 
         // lightningButton
         // 
-        lightningButton.Location = new Point(371, 297);
-        lightningButton.Margin = new Padding(4);
+        lightningButton.Location = new Point(530, 495);
+        lightningButton.Margin = new Padding(6, 7, 6, 7);
         lightningButton.Name = "lightningButton";
-        lightningButton.Size = new Size(66, 70);
+        lightningButton.Size = new Size(94, 117);
         lightningButton.TabIndex = 58;
         lightningButton.UseVisualStyleBackColor = true;
         // 
         // nButton
         // 
-        nButton.Location = new Point(444, 297);
-        nButton.Margin = new Padding(4);
+        nButton.Location = new Point(634, 495);
+        nButton.Margin = new Padding(6, 7, 6, 7);
         nButton.Name = "nButton";
-        nButton.Size = new Size(66, 70);
+        nButton.Size = new Size(94, 117);
         nButton.TabIndex = 57;
         nButton.UseVisualStyleBackColor = true;
         // 
         // oButton
         // 
-        oButton.Location = new Point(518, 297);
-        oButton.Margin = new Padding(4);
+        oButton.Location = new Point(740, 495);
+        oButton.Margin = new Padding(6, 7, 6, 7);
         oButton.Name = "oButton";
-        oButton.Size = new Size(66, 70);
+        oButton.Size = new Size(94, 117);
         oButton.TabIndex = 56;
         oButton.UseVisualStyleBackColor = true;
         // 
         // hashtagButton
         // 
-        hashtagButton.Location = new Point(224, 297);
-        hashtagButton.Margin = new Padding(4);
+        hashtagButton.Location = new Point(320, 495);
+        hashtagButton.Margin = new Padding(6, 7, 6, 7);
         hashtagButton.Name = "hashtagButton";
-        hashtagButton.Size = new Size(66, 70);
+        hashtagButton.Size = new Size(94, 117);
         hashtagButton.TabIndex = 55;
         hashtagButton.UseVisualStyleBackColor = true;
         // 
         // omegaButton
         // 
-        omegaButton.Location = new Point(592, 297);
-        omegaButton.Margin = new Padding(4);
+        omegaButton.Location = new Point(846, 495);
+        omegaButton.Margin = new Padding(6, 7, 6, 7);
         omegaButton.Name = "omegaButton";
-        omegaButton.Size = new Size(66, 70);
+        omegaButton.Size = new Size(94, 117);
         omegaButton.TabIndex = 54;
         omegaButton.UseVisualStyleBackColor = true;
         // 
         // hButton
         // 
-        hButton.Location = new Point(150, 297);
-        hButton.Margin = new Padding(4);
+        hButton.Location = new Point(214, 495);
+        hButton.Margin = new Padding(6, 7, 6, 7);
         hButton.Name = "hButton";
-        hButton.Size = new Size(66, 70);
+        hButton.Size = new Size(94, 117);
         hButton.TabIndex = 53;
         hButton.UseVisualStyleBackColor = true;
         // 
         // eButton
         // 
-        eButton.Location = new Point(77, 297);
-        eButton.Margin = new Padding(4);
+        eButton.Location = new Point(110, 495);
+        eButton.Margin = new Padding(6, 7, 6, 7);
         eButton.Name = "eButton";
-        eButton.Size = new Size(66, 70);
+        eButton.Size = new Size(94, 117);
         eButton.TabIndex = 52;
         eButton.UseVisualStyleBackColor = true;
         // 
         // copyrightButton
         // 
-        copyrightButton.Location = new Point(4, 297);
-        copyrightButton.Margin = new Padding(4);
+        copyrightButton.Location = new Point(6, 495);
+        copyrightButton.Margin = new Padding(6, 7, 6, 7);
         copyrightButton.Name = "copyrightButton";
-        copyrightButton.Size = new Size(66, 70);
+        copyrightButton.Size = new Size(94, 117);
         copyrightButton.TabIndex = 51;
         copyrightButton.UseVisualStyleBackColor = true;
         // 
         // selectedImageButton3
         // 
-        selectedImageButton3.Location = new Point(371, 81);
-        selectedImageButton3.Margin = new Padding(4);
+        selectedImageButton3.Location = new Point(530, 135);
+        selectedImageButton3.Margin = new Padding(6, 7, 6, 7);
         selectedImageButton3.Name = "selectedImageButton3";
-        selectedImageButton3.Size = new Size(118, 116);
+        selectedImageButton3.Size = new Size(169, 193);
         selectedImageButton3.TabIndex = 50;
         selectedImageButton3.UseVisualStyleBackColor = true;
         // 
         // selectedImageButton2
         // 
-        selectedImageButton2.Location = new Point(172, 81);
-        selectedImageButton2.Margin = new Padding(4);
+        selectedImageButton2.Location = new Point(246, 135);
+        selectedImageButton2.Margin = new Padding(6, 7, 6, 7);
         selectedImageButton2.Name = "selectedImageButton2";
-        selectedImageButton2.Size = new Size(118, 116);
+        selectedImageButton2.Size = new Size(169, 193);
         selectedImageButton2.TabIndex = 49;
         selectedImageButton2.UseVisualStyleBackColor = true;
         // 
         // selectedImageButton1
         // 
-        selectedImageButton1.Location = new Point(11, 81);
-        selectedImageButton1.Margin = new Padding(4);
+        selectedImageButton1.Location = new Point(16, 135);
+        selectedImageButton1.Margin = new Padding(6, 7, 6, 7);
         selectedImageButton1.Name = "selectedImageButton1";
-        selectedImageButton1.Size = new Size(118, 116);
+        selectedImageButton1.Size = new Size(169, 193);
         selectedImageButton1.TabIndex = 48;
         selectedImageButton1.UseVisualStyleBackColor = true;
         // 
         // bButton
         // 
-        bButton.Location = new Point(298, 219);
-        bButton.Margin = new Padding(4);
+        bButton.Location = new Point(426, 365);
+        bButton.Margin = new Padding(6, 7, 6, 7);
         bButton.Name = "bButton";
-        bButton.Size = new Size(66, 70);
+        bButton.Size = new Size(94, 117);
         bButton.TabIndex = 47;
         bButton.UseVisualStyleBackColor = true;
         // 
         // backwardsCButton
         // 
-        backwardsCButton.Location = new Point(371, 219);
-        backwardsCButton.Margin = new Padding(4);
+        backwardsCButton.Location = new Point(530, 365);
+        backwardsCButton.Margin = new Padding(6, 7, 6, 7);
         backwardsCButton.Name = "backwardsCButton";
-        backwardsCButton.Size = new Size(66, 70);
+        backwardsCButton.Size = new Size(94, 117);
         backwardsCButton.TabIndex = 46;
         backwardsCButton.UseVisualStyleBackColor = true;
         // 
         // blackStarButton
         // 
-        blackStarButton.Location = new Point(444, 219);
-        blackStarButton.Margin = new Padding(4);
+        blackStarButton.Location = new Point(634, 365);
+        blackStarButton.Margin = new Padding(6, 7, 6, 7);
         blackStarButton.Name = "blackStarButton";
-        blackStarButton.Size = new Size(66, 70);
+        blackStarButton.Size = new Size(94, 117);
         blackStarButton.TabIndex = 45;
         blackStarButton.UseVisualStyleBackColor = true;
         // 
         // buttButton
         // 
-        buttButton.Location = new Point(518, 219);
-        buttButton.Margin = new Padding(4);
+        buttButton.Location = new Point(740, 365);
+        buttButton.Margin = new Padding(6, 7, 6, 7);
         buttButton.Name = "buttButton";
-        buttButton.Size = new Size(66, 70);
+        buttButton.Size = new Size(94, 117);
         buttButton.TabIndex = 44;
         buttButton.UseVisualStyleBackColor = true;
         // 
         // aeButton
         // 
-        aeButton.Location = new Point(224, 219);
-        aeButton.Margin = new Padding(4);
+        aeButton.Location = new Point(320, 365);
+        aeButton.Margin = new Padding(6, 7, 6, 7);
         aeButton.Name = "aeButton";
-        aeButton.Size = new Size(66, 70);
+        aeButton.Size = new Size(94, 117);
         aeButton.TabIndex = 43;
         aeButton.UseVisualStyleBackColor = true;
         // 
         // cButton
         // 
-        cButton.Location = new Point(592, 219);
-        cButton.Margin = new Padding(4);
+        cButton.Location = new Point(846, 365);
+        cButton.Margin = new Padding(6, 7, 6, 7);
         cButton.Name = "cButton";
-        cButton.Size = new Size(66, 70);
+        cButton.Size = new Size(94, 117);
         cButton.TabIndex = 42;
         cButton.UseVisualStyleBackColor = true;
         // 
         // aButton
         // 
-        aButton.Location = new Point(150, 219);
-        aButton.Margin = new Padding(4);
+        aButton.Location = new Point(214, 365);
+        aButton.Margin = new Padding(6, 7, 6, 7);
         aButton.Name = "aButton";
-        aButton.Size = new Size(66, 70);
+        aButton.Size = new Size(94, 117);
         aButton.TabIndex = 41;
         aButton.UseVisualStyleBackColor = true;
         // 
         // sixButton
         // 
-        sixButton.Location = new Point(77, 219);
-        sixButton.Margin = new Padding(4);
+        sixButton.Location = new Point(110, 365);
+        sixButton.Margin = new Padding(6, 7, 6, 7);
         sixButton.Name = "sixButton";
-        sixButton.Size = new Size(66, 70);
+        sixButton.Size = new Size(94, 117);
         sixButton.TabIndex = 40;
         sixButton.UseVisualStyleBackColor = true;
         // 
         // threeButton
         // 
-        threeButton.Location = new Point(4, 219);
-        threeButton.Margin = new Padding(4);
+        threeButton.Location = new Point(6, 365);
+        threeButton.Margin = new Padding(6, 7, 6, 7);
         threeButton.Name = "threeButton";
-        threeButton.Size = new Size(66, 70);
+        threeButton.Size = new Size(94, 117);
         threeButton.TabIndex = 39;
         threeButton.UseVisualStyleBackColor = true;
         // 
         // selectedImageButton4
         // 
-        selectedImageButton4.Location = new Point(536, 81);
-        selectedImageButton4.Margin = new Padding(4);
+        selectedImageButton4.Location = new Point(766, 135);
+        selectedImageButton4.Margin = new Padding(6, 7, 6, 7);
         selectedImageButton4.Name = "selectedImageButton4";
-        selectedImageButton4.Size = new Size(118, 116);
+        selectedImageButton4.Size = new Size(169, 193);
         selectedImageButton4.TabIndex = 38;
         selectedImageButton4.UseVisualStyleBackColor = true;
         // 
         // frmKeypads
         // 
-        AutoScaleDimensions = new SizeF(7F, 15F);
+        AutoScaleDimensions = new SizeF(10F, 25F);
         AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(665, 544);
+        ClientSize = new Size(950, 907);
         Controls.Add(strikeButton);
         Controls.Add(submitButton);
         Controls.Add(backButton);
@@ -418,10 +418,9 @@ partial class frmKeypads
         Controls.Add(sixButton);
         Controls.Add(threeButton);
         Controls.Add(selectedImageButton4);
-        Margin = new Padding(3, 2, 3, 2);
+        Margin = new Padding(4, 3, 4, 3);
         Name = "frmKeypads";
         Text = "Keypads";
-        FormClosed += frmKeypads_FormClosed;
         ResumeLayout(false);
     }
 

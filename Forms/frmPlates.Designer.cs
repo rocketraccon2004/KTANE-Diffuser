@@ -28,125 +28,134 @@ partial class frmPlates
     /// </summary>
     private void InitializeComponent()
     {
-        this.parellelCheckBox = new System.Windows.Forms.CheckBox();
-        this.DviCheckBox = new System.Windows.Forms.CheckBox();
-        this.serialCheckBox = new System.Windows.Forms.CheckBox();
-        this.RcaCheckBox = new System.Windows.Forms.CheckBox();
-        this.psCheckBox = new System.Windows.Forms.CheckBox();
-        this.rjCheckBox = new System.Windows.Forms.CheckBox();
-        this.submitButton = new System.Windows.Forms.Button();
-        this.backButton = new System.Windows.Forms.Button();
-        this.label1 = new System.Windows.Forms.Label();
-        this.SuspendLayout();
+        parellelCheckBox = new CheckBox();
+        DviCheckBox = new CheckBox();
+        serialCheckBox = new CheckBox();
+        RcaCheckBox = new CheckBox();
+        psCheckBox = new CheckBox();
+        rjCheckBox = new CheckBox();
+        submitButton = new Button();
+        backButton = new Button();
+        label1 = new Label();
+        SuspendLayout();
         // 
         // parellelCheckBox
         // 
-        this.parellelCheckBox.AutoSize = true;
-        this.parellelCheckBox.Location = new System.Drawing.Point(232, 82);
-        this.parellelCheckBox.Name = "parellelCheckBox";
-        this.parellelCheckBox.Size = new System.Drawing.Size(77, 21);
-        this.parellelCheckBox.TabIndex = 6;
-        this.parellelCheckBox.Text = "Parallel";
-        this.parellelCheckBox.UseVisualStyleBackColor = true;
+        parellelCheckBox.AutoSize = true;
+        parellelCheckBox.Location = new Point(290, 128);
+        parellelCheckBox.Margin = new Padding(4, 5, 4, 5);
+        parellelCheckBox.Name = "parellelCheckBox";
+        parellelCheckBox.Size = new Size(92, 29);
+        parellelCheckBox.TabIndex = 6;
+        parellelCheckBox.Text = "Parallel";
+        parellelCheckBox.UseVisualStyleBackColor = true;
         // 
         // DviCheckBox
         // 
-        this.DviCheckBox.AutoSize = true;
-        this.DviCheckBox.Location = new System.Drawing.Point(232, 164);
-        this.DviCheckBox.Name = "DviCheckBox";
-        this.DviCheckBox.Size = new System.Drawing.Size(52, 21);
-        this.DviCheckBox.TabIndex = 7;
-        this.DviCheckBox.Text = "DVI";
-        this.DviCheckBox.UseVisualStyleBackColor = true;
+        DviCheckBox.AutoSize = true;
+        DviCheckBox.Location = new Point(290, 256);
+        DviCheckBox.Margin = new Padding(4, 5, 4, 5);
+        DviCheckBox.Name = "DviCheckBox";
+        DviCheckBox.Size = new Size(67, 29);
+        DviCheckBox.TabIndex = 7;
+        DviCheckBox.Text = "DVI";
+        DviCheckBox.UseVisualStyleBackColor = true;
         // 
         // serialCheckBox
         // 
-        this.serialCheckBox.AutoSize = true;
-        this.serialCheckBox.Location = new System.Drawing.Point(232, 121);
-        this.serialCheckBox.Name = "serialCheckBox";
-        this.serialCheckBox.Size = new System.Drawing.Size(66, 21);
-        this.serialCheckBox.TabIndex = 8;
-        this.serialCheckBox.Text = "Serial";
-        this.serialCheckBox.UseVisualStyleBackColor = true;
+        serialCheckBox.AutoSize = true;
+        serialCheckBox.Location = new Point(290, 189);
+        serialCheckBox.Margin = new Padding(4, 5, 4, 5);
+        serialCheckBox.Name = "serialCheckBox";
+        serialCheckBox.Size = new Size(80, 29);
+        serialCheckBox.TabIndex = 8;
+        serialCheckBox.Text = "Serial";
+        serialCheckBox.UseVisualStyleBackColor = true;
         // 
         // RcaCheckBox
         // 
-        this.RcaCheckBox.AutoSize = true;
-        this.RcaCheckBox.Location = new System.Drawing.Point(232, 207);
-        this.RcaCheckBox.Name = "RcaCheckBox";
-        this.RcaCheckBox.Size = new System.Drawing.Size(58, 21);
-        this.RcaCheckBox.TabIndex = 9;
-        this.RcaCheckBox.Text = "RCA";
-        this.RcaCheckBox.UseVisualStyleBackColor = true;
+        RcaCheckBox.AutoSize = true;
+        RcaCheckBox.Location = new Point(290, 323);
+        RcaCheckBox.Margin = new Padding(4, 5, 4, 5);
+        RcaCheckBox.Name = "RcaCheckBox";
+        RcaCheckBox.Size = new Size(72, 29);
+        RcaCheckBox.TabIndex = 9;
+        RcaCheckBox.Text = "RCA";
+        RcaCheckBox.UseVisualStyleBackColor = true;
         // 
         // psCheckBox
         // 
-        this.psCheckBox.AutoSize = true;
-        this.psCheckBox.Location = new System.Drawing.Point(232, 253);
-        this.psCheckBox.Name = "psCheckBox";
-        this.psCheckBox.Size = new System.Drawing.Size(60, 21);
-        this.psCheckBox.TabIndex = 10;
-        this.psCheckBox.Text = "PS/2";
-        this.psCheckBox.UseVisualStyleBackColor = true;
+        psCheckBox.AutoSize = true;
+        psCheckBox.Location = new Point(290, 395);
+        psCheckBox.Margin = new Padding(4, 5, 4, 5);
+        psCheckBox.Name = "psCheckBox";
+        psCheckBox.Size = new Size(75, 29);
+        psCheckBox.TabIndex = 10;
+        psCheckBox.Text = "PS/2";
+        psCheckBox.UseVisualStyleBackColor = true;
         // 
         // rjCheckBox
         // 
-        this.rjCheckBox.AutoSize = true;
-        this.rjCheckBox.Location = new System.Drawing.Point(232, 294);
-        this.rjCheckBox.Name = "rjCheckBox";
-        this.rjCheckBox.Size = new System.Drawing.Size(63, 21);
-        this.rjCheckBox.TabIndex = 11;
-        this.rjCheckBox.Text = "RJ45";
-        this.rjCheckBox.UseVisualStyleBackColor = true;
+        rjCheckBox.AutoSize = true;
+        rjCheckBox.Location = new Point(290, 459);
+        rjCheckBox.Margin = new Padding(4, 5, 4, 5);
+        rjCheckBox.Name = "rjCheckBox";
+        rjCheckBox.Size = new Size(76, 29);
+        rjCheckBox.TabIndex = 11;
+        rjCheckBox.Text = "RJ45";
+        rjCheckBox.UseVisualStyleBackColor = true;
         // 
         // submitButton
         // 
-        this.submitButton.Location = new System.Drawing.Point(310, 327);
-        this.submitButton.Name = "submitButton";
-        this.submitButton.Size = new System.Drawing.Size(86, 31);
-        this.submitButton.TabIndex = 12;
-        this.submitButton.Text = "Submit";
-        this.submitButton.UseVisualStyleBackColor = true;
-        this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
+        submitButton.Location = new Point(388, 511);
+        submitButton.Margin = new Padding(4, 5, 4, 5);
+        submitButton.Name = "submitButton";
+        submitButton.Size = new Size(108, 48);
+        submitButton.TabIndex = 12;
+        submitButton.Text = "Submit";
+        submitButton.UseVisualStyleBackColor = true;
+        submitButton.Click += submitButton_Click;
         // 
         // backButton
         // 
-        this.backButton.Location = new System.Drawing.Point(114, 327);
-        this.backButton.Name = "backButton";
-        this.backButton.Size = new System.Drawing.Size(86, 31);
-        this.backButton.TabIndex = 13;
-        this.backButton.Text = "Back";
-        this.backButton.UseVisualStyleBackColor = true;
-        this.backButton.Click += new System.EventHandler(this.backButton_Click);
+        backButton.Location = new Point(142, 511);
+        backButton.Margin = new Padding(4, 5, 4, 5);
+        backButton.Name = "backButton";
+        backButton.Size = new Size(108, 48);
+        backButton.TabIndex = 13;
+        backButton.Text = "Back";
+        backButton.UseVisualStyleBackColor = true;
+        backButton.Click += backButton_Click;
         // 
         // label1
         // 
-        this.label1.AutoSize = true;
-        this.label1.Location = new System.Drawing.Point(232, 25);
-        this.label1.Name = "label1";
-        this.label1.Size = new System.Drawing.Size(80, 17);
-        this.label1.TabIndex = 14;
-        this.label1.Text = "Plate # of #";
+        label1.AutoSize = true;
+        label1.Location = new Point(290, 39);
+        label1.Margin = new Padding(4, 0, 4, 0);
+        label1.Name = "label1";
+        label1.Size = new Size(104, 25);
+        label1.TabIndex = 14;
+        label1.Text = "Plate # of #";
         // 
         // frmPlates
         // 
-        this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        this.ClientSize = new System.Drawing.Size(542, 371);
-        this.Controls.Add(this.label1);
-        this.Controls.Add(this.backButton);
-        this.Controls.Add(this.submitButton);
-        this.Controls.Add(this.rjCheckBox);
-        this.Controls.Add(this.psCheckBox);
-        this.Controls.Add(this.RcaCheckBox);
-        this.Controls.Add(this.serialCheckBox);
-        this.Controls.Add(this.DviCheckBox);
-        this.Controls.Add(this.parellelCheckBox);
-        this.Name = "frmPlates";
-        this.Text = "PlateForm";
-        this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PlateForm_FormClosing);
-        this.ResumeLayout(false);
-        this.PerformLayout();
+        AutoScaleDimensions = new SizeF(10F, 25F);
+        AutoScaleMode = AutoScaleMode.Font;
+        ClientSize = new Size(678, 580);
+        Controls.Add(label1);
+        Controls.Add(backButton);
+        Controls.Add(submitButton);
+        Controls.Add(rjCheckBox);
+        Controls.Add(psCheckBox);
+        Controls.Add(RcaCheckBox);
+        Controls.Add(serialCheckBox);
+        Controls.Add(DviCheckBox);
+        Controls.Add(parellelCheckBox);
+        Margin = new Padding(4, 5, 4, 5);
+        Name = "frmPlates";
+        Text = "Port Plates";
+        ResumeLayout(false);
+        PerformLayout();
     }
 
     #endregion

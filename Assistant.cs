@@ -1,5 +1,4 @@
-﻿using KTANE_Diffuser_Winforms.Forms;
-
+﻿
 namespace KTANE_Diffuser_Winforms;
 
 public class Assistant
@@ -12,18 +11,21 @@ public class Assistant
 
     public List<string> modules = new List<string>()
     {
-        "Wires",
+        "3d Maze (DO NOT SELECT)",
+        "Adjacent Letters",
         "Button",
+        "Colour Flash",
+        "Complicated Wires",
         "Keypads",
-        "Simon Says",
-        "Who's On First",
+        "Knob",
+        "Maze",
         "Memory",
         "Morse Code",
-        "Complicated Wires",
-        "Wire Sequences",
-        "Maze",
         "Password",
-        "Knob",
+        "Simon Says",
+        "Wire Sequences",
+        "Wires",
+        "Who's On First",
     };
 
     public static void init()
@@ -33,50 +35,19 @@ public class Assistant
 
     public int lastDigitOfSerial()
     {
-        return int.Parse(bomb.serial[5].ToString());
+        return (int) char.GetNumericValue(bomb.serial[5]);
     }
 
-    public void SelectModule(string Module)
+    public int? firstDigitOfSerial()
     {
-        switch (Module)
+        foreach (char c in bomb.serial)
         {
-            case "Button":
-                Program.switchForm(new frmButton());
-                break;
-            case "Wires":
-                Program.switchForm(new frmWires());
-                break;
-            case "Keypads":
-                Program.switchForm(new frmKeypads());
-                break;
-            case "Simon Says":
-                Program.switchForm(new frmSimon());
-                break;
-            case "Who's On First":
-                Program.switchForm(new frmWhosOnFirst());
-                break;
-            case "Memory":
-                Program.switchForm(new frmMemory());
-                break;
-            case "Morse Code":
-                Program.switchForm(new frmMorseCode());
-                break;
-            case "Complicated Wires":
-                Program.switchForm(new frmComplicatedWires());
-                break;
-            case "Wire Sequences":
-                Program.switchForm(new frmWireSequences());
-                break;
-            case "Maze":
-                Program.switchForm(new frmMaze());
-                break;
-            case "Password":
-                Program.switchForm(new frmPassword());
-                break;
-            case "Knob":
-                Program.switchForm(new frmKnob());
-                break;
+            if (char.IsDigit(c))
+            {
+                return (int) char.GetNumericValue(c);
+            }
         }
+        return null;
     }
 
     public bool parallel()
@@ -421,5 +392,15 @@ public class Assistant
         }
 
         return false;
+    }
+
+    public void Strike(bool shift)
+    {
+        if (shift)
+        {
+            strikes--;
+            return;
+        }
+        strikes++;
     }
 }

@@ -438,7 +438,7 @@ partial class frmMazeAnswer
         row1button1.TabIndex = 74;
         row1button1.UseVisualStyleBackColor = true;
         // 
-        // MazeAnswerForm
+        // frmMazeAnswer
         // 
         AutoScaleDimensions = new SizeF(10F, 25F);
         AutoScaleMode = AutoScaleMode.Font;
@@ -480,8 +480,8 @@ partial class frmMazeAnswer
         Controls.Add(row1button3);
         Controls.Add(row1button2);
         Controls.Add(row1button1);
-        Margin = new Padding(4, 4, 4, 4);
-        Name = "MazeAnswerForm";
+        Margin = new Padding(4);
+        Name = "frmMazeAnswer";
         Text = "Maze Answer";
         ResumeLayout(false);
     }

@@ -1,6 +1,6 @@
 ﻿namespace KTANE_Diffuser_Winforms.Forms;
 
-public partial class frmMaze : Form
+public partial class frmMaze : ModuleForm
 {
     private Maze? maze;
     Color[] mazeColors =
@@ -139,7 +139,7 @@ public partial class frmMaze : Form
     /// </summary>
     private void backButton_Click(object sender, EventArgs e)
     {
-        Program.switchForm(new frmMain());
+        Program.switchForm(Utils.getMainForm());
     }
 
     /// <summary>
@@ -362,10 +362,5 @@ public partial class frmMaze : Form
             return;
         }
         Assistant.instance.strikes++;
-    }
-
-    private void frmMaze_FormClosed(object? sender, EventArgs e)
-    {
-        Application.Exit();
     }
 }

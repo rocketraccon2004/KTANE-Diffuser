@@ -1,6 +1,6 @@
 ﻿namespace KTANE_Diffuser_Winforms.Forms;
 
-public partial class frmMemory : Form
+public partial class frmMemory : ModuleForm
 {
     private int round = 1;
     private string round1Answer;
@@ -39,7 +39,7 @@ public partial class frmMemory : Form
     {
         if (round == 1)
         {
-            Program.switchForm(new frmMain());
+            Program.switchForm(Utils.getMainForm());
             return;
         }
         round--;
@@ -61,7 +61,7 @@ public partial class frmMemory : Form
         MessageBox.Show($"Click {Solve()}");
         if (round == 5)
         {
-            Program.switchForm(new frmMain());
+            Program.switchForm(Utils.getMainForm());
             return;
         }
         round++;
@@ -177,10 +177,5 @@ public partial class frmMemory : Form
             }
         }
         return 0;
-    }
-
-    private void frmMemory_FormClosing(object sender, FormClosingEventArgs e)
-    {
-        Application.Exit();
     }
 }

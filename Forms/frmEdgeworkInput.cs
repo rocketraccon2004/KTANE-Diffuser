@@ -2,7 +2,7 @@
 
 namespace KTANE_Diffuser_Winforms.Forms;
 
-public partial class frmEdgeworkInput : Form
+public partial class frmEdgeworkInput : ModuleForm
 {
     public frmEdgeworkInput()
     {
@@ -15,11 +15,6 @@ public partial class frmEdgeworkInput : Form
         {
             dayOfWeekComboBox.Items.Add(s);
         }
-    }
-
-    private void frmEdgeworkInput_FormClosing(object sender, FormClosingEventArgs e)
-    {
-        Application.Exit();
     }
 
     private void submitButton_Click(object sender, EventArgs e)
@@ -127,6 +122,6 @@ public partial class frmEdgeworkInput : Form
         }
 
         Assistant.instance.bomb = new Bomb(batteries, holders, serial, day, plates, null, indicators);
-        Program.switchForm(new frmMain());
+        Program.switchForm(Utils.getMainForm());
     }
 }

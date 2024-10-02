@@ -605,7 +605,6 @@ partial class frmEdgeworkInput
         Margin = new Padding(3, 2, 3, 2);
         Name = "frmEdgeworkInput";
         Text = "Manual Edgework";
-        FormClosing += frmEdgeworkInput_FormClosing;
         Load += frmEdgeworkInput_Load;
         ResumeLayout(false);
         PerformLayout();

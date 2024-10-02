@@ -2,7 +2,7 @@
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 namespace KTANE_Diffuser_Winforms.Forms;
 
-public partial class frmPlates : Form
+public partial class frmPlates : ModuleForm
 {
     private int batteries;
     private int holders;
@@ -35,12 +35,6 @@ public partial class frmPlates : Form
     {
         label1.Text = $"Plate {currentIteration} of {plates}";
     }
-
-    private void PlateForm_FormClosing(object sender, FormClosingEventArgs e)
-    {
-        Application.Exit();
-    }
-
     private void backButton_Click(object sender, EventArgs e)
     {
         currentIteration--;
@@ -68,7 +62,7 @@ public partial class frmPlates : Form
         }
 
         Assistant.instance.bomb = new Bomb(batteries, holders, serial, day, getEmptyPlates(), plateArray, indicators);
-        Program.switchForm(new frmMain());
+        Program.switchForm(Utils.getMainForm());
     }
 
     private int getEmptyPlates()

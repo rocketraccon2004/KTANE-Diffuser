@@ -1,4 +1,6 @@
-﻿namespace KTANE_Diffuser_Winforms;
+﻿#pragma warning disable CS8601 // Possible null reference assignment.
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
+namespace KTANE_Diffuser_Winforms;
 
 public class Bomb
 {
@@ -20,6 +22,33 @@ public class Bomb
         this.plates = plates;
         this.indicators = indicators;
     }
+
+    public List<Indicator> getLitIndicators()
+    {
+        List<Indicator> toReturn = new List<Indicator>();
+        foreach (Indicator i in indicators)
+        {
+            if (i.lit && i.visible)
+            {
+                toReturn.Add(i);
+            }
+        }
+        return toReturn;
+    }
+
+
+    public List<Indicator> getUnlitIndicators()
+    {
+        List<Indicator> toReturn = new List<Indicator>();
+        foreach (Indicator i in indicators)
+        {
+            if (!i.lit && i.visible)
+            {
+                toReturn.Add(i);
+            }
+        }
+        return toReturn;
+    }
 }
 
 public enum Day
@@ -32,3 +61,5 @@ public enum Day
     Saturday,
     Sunday
 }
+#pragma warning restore CS8618 
+#pragma warning restore CS8601 

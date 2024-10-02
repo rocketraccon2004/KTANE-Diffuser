@@ -28,116 +28,122 @@ partial class frmWhosOnFirst
     /// </summary>
     private void InitializeComponent()
     {
-        this.strikeButton = new System.Windows.Forms.Button();
-        this.backButton = new System.Windows.Forms.Button();
-        this.btnSubmit1 = new System.Windows.Forms.Button();
-        this.lblPosition = new System.Windows.Forms.Label();
-        this.btnSubmit2 = new System.Windows.Forms.Button();
-        this.txtWord1 = new System.Windows.Forms.TextBox();
-        this.txtWord2 = new System.Windows.Forms.TextBox();
-        this.txtSolution = new System.Windows.Forms.TextBox();
-        this.SuspendLayout();
+        strikeButton = new Button();
+        backButton = new Button();
+        btnSubmit1 = new Button();
+        lblPosition = new Label();
+        btnSubmit2 = new Button();
+        txtWord1 = new TextBox();
+        txtWord2 = new TextBox();
+        txtSolution = new TextBox();
+        SuspendLayout();
         // 
         // strikeButton
         // 
-        this.strikeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-        this.strikeButton.Location = new System.Drawing.Point(300, 624);
-        this.strikeButton.Margin = new System.Windows.Forms.Padding(4);
-        this.strikeButton.Name = "strikeButton";
-        this.strikeButton.Size = new System.Drawing.Size(161, 54);
-        this.strikeButton.TabIndex = 76;
-        this.strikeButton.Text = "Strike";
-        this.strikeButton.UseVisualStyleBackColor = true;
-        this.strikeButton.Click += new System.EventHandler(this.strikeButton_Click);
+        strikeButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+        strikeButton.Location = new Point(375, 975);
+        strikeButton.Margin = new Padding(5, 6, 5, 6);
+        strikeButton.Name = "strikeButton";
+        strikeButton.Size = new Size(201, 84);
+        strikeButton.TabIndex = 76;
+        strikeButton.Text = "Strike";
+        strikeButton.UseVisualStyleBackColor = true;
+        strikeButton.Click += strikeButton_Click;
         // 
         // backButton
         // 
-        this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-        this.backButton.Location = new System.Drawing.Point(13, 624);
-        this.backButton.Margin = new System.Windows.Forms.Padding(4);
-        this.backButton.Name = "backButton";
-        this.backButton.Size = new System.Drawing.Size(161, 54);
-        this.backButton.TabIndex = 75;
-        this.backButton.Text = "Back";
-        this.backButton.UseVisualStyleBackColor = true;
-        this.backButton.Click += new System.EventHandler(this.backButton_Click);
+        backButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+        backButton.Location = new Point(16, 975);
+        backButton.Margin = new Padding(5, 6, 5, 6);
+        backButton.Name = "backButton";
+        backButton.Size = new Size(201, 84);
+        backButton.TabIndex = 75;
+        backButton.Text = "Back";
+        backButton.UseVisualStyleBackColor = true;
+        backButton.Click += backButton_Click;
         // 
         // btnSubmit1
         // 
-        this.btnSubmit1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-        this.btnSubmit1.Location = new System.Drawing.Point(314, 48);
-        this.btnSubmit1.Name = "btnSubmit1";
-        this.btnSubmit1.Size = new System.Drawing.Size(156, 49);
-        this.btnSubmit1.TabIndex = 77;
-        this.btnSubmit1.Text = "Submit";
-        this.btnSubmit1.UseVisualStyleBackColor = true;
-        this.btnSubmit1.Click += new System.EventHandler(this.btnSubmit1_Click);
+        btnSubmit1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+        btnSubmit1.Location = new Point(392, 75);
+        btnSubmit1.Margin = new Padding(4, 5, 4, 5);
+        btnSubmit1.Name = "btnSubmit1";
+        btnSubmit1.Size = new Size(195, 77);
+        btnSubmit1.TabIndex = 77;
+        btnSubmit1.Text = "Submit";
+        btnSubmit1.UseVisualStyleBackColor = true;
+        btnSubmit1.Click += btnSubmit1_Click;
         // 
         // lblPosition
         // 
-        this.lblPosition.AutoSize = true;
-        this.lblPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-        this.lblPosition.Location = new System.Drawing.Point(28, 214);
-        this.lblPosition.Name = "lblPosition";
-        this.lblPosition.Size = new System.Drawing.Size(0, 25);
-        this.lblPosition.TabIndex = 78;
+        lblPosition.AutoSize = true;
+        lblPosition.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+        lblPosition.Location = new Point(35, 334);
+        lblPosition.Margin = new Padding(4, 0, 4, 0);
+        lblPosition.Name = "lblPosition";
+        lblPosition.Size = new Size(0, 29);
+        lblPosition.TabIndex = 78;
         // 
         // btnSubmit2
         // 
-        this.btnSubmit2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-        this.btnSubmit2.Location = new System.Drawing.Point(314, 244);
-        this.btnSubmit2.Name = "btnSubmit2";
-        this.btnSubmit2.Size = new System.Drawing.Size(156, 49);
-        this.btnSubmit2.TabIndex = 79;
-        this.btnSubmit2.Text = "  ";
-        this.btnSubmit2.UseVisualStyleBackColor = true;
-        this.btnSubmit2.Click += new System.EventHandler(this.btnSubmit2_Click);
+        btnSubmit2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+        btnSubmit2.Location = new Point(392, 381);
+        btnSubmit2.Margin = new Padding(4, 5, 4, 5);
+        btnSubmit2.Name = "btnSubmit2";
+        btnSubmit2.Size = new Size(195, 77);
+        btnSubmit2.TabIndex = 79;
+        btnSubmit2.Text = "  ";
+        btnSubmit2.UseVisualStyleBackColor = true;
+        btnSubmit2.Click += btnSubmit2_Click;
         // 
         // txtWord1
         // 
-        this.txtWord1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-        this.txtWord1.Location = new System.Drawing.Point(124, 64);
-        this.txtWord1.Name = "txtWord1";
-        this.txtWord1.Size = new System.Drawing.Size(184, 30);
-        this.txtWord1.TabIndex = 80;
+        txtWord1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+        txtWord1.Location = new Point(155, 100);
+        txtWord1.Margin = new Padding(4, 5, 4, 5);
+        txtWord1.Name = "txtWord1";
+        txtWord1.Size = new Size(229, 35);
+        txtWord1.TabIndex = 80;
         // 
         // txtWord2
         // 
-        this.txtWord2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-        this.txtWord2.Location = new System.Drawing.Point(124, 253);
-        this.txtWord2.Name = "txtWord2";
-        this.txtWord2.Size = new System.Drawing.Size(184, 30);
-        this.txtWord2.TabIndex = 81;
+        txtWord2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+        txtWord2.Location = new Point(155, 395);
+        txtWord2.Margin = new Padding(4, 5, 4, 5);
+        txtWord2.Name = "txtWord2";
+        txtWord2.Size = new Size(229, 35);
+        txtWord2.TabIndex = 81;
         // 
         // txtSolution
         // 
-        this.txtSolution.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-        this.txtSolution.Location = new System.Drawing.Point(9, 353);
-        this.txtSolution.Multiline = true;
-        this.txtSolution.Name = "txtSolution";
-        this.txtSolution.ReadOnly = true;
-        this.txtSolution.Size = new System.Drawing.Size(460, 239);
-        this.txtSolution.TabIndex = 82;
+        txtSolution.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+        txtSolution.Location = new Point(11, 552);
+        txtSolution.Margin = new Padding(4, 5, 4, 5);
+        txtSolution.Multiline = true;
+        txtSolution.Name = "txtSolution";
+        txtSolution.ReadOnly = true;
+        txtSolution.Size = new Size(574, 371);
+        txtSolution.TabIndex = 82;
         // 
         // frmWhosOnFirst
         // 
-        this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        this.ClientSize = new System.Drawing.Size(500, 704);
-        this.Controls.Add(this.txtSolution);
-        this.Controls.Add(this.txtWord2);
-        this.Controls.Add(this.txtWord1);
-        this.Controls.Add(this.btnSubmit2);
-        this.Controls.Add(this.lblPosition);
-        this.Controls.Add(this.btnSubmit1);
-        this.Controls.Add(this.strikeButton);
-        this.Controls.Add(this.backButton);
-        this.Name = "frmWhosOnFirst";
-        this.Text = "Who\'s on first";
-        this.Load += new System.EventHandler(this.frmWhosOnFirst_Load);
-        this.ResumeLayout(false);
-        this.PerformLayout();
-
+        AutoScaleDimensions = new SizeF(10F, 25F);
+        AutoScaleMode = AutoScaleMode.Font;
+        ClientSize = new Size(625, 1100);
+        Controls.Add(txtSolution);
+        Controls.Add(txtWord2);
+        Controls.Add(txtWord1);
+        Controls.Add(btnSubmit2);
+        Controls.Add(lblPosition);
+        Controls.Add(btnSubmit1);
+        Controls.Add(strikeButton);
+        Controls.Add(backButton);
+        Margin = new Padding(4, 5, 4, 5);
+        Name = "frmWhosOnFirst";
+        Text = "Who's on first";
+        Load += frmWhosOnFirst_Load;
+        ResumeLayout(false);
+        PerformLayout();
     }
 
     #endregion
