@@ -30,104 +30,125 @@ partial class frmMain
     /// </summary>
     private void InitializeComponent()
     {
-        dropDownModules = new ComboBox();
-        label1 = new Label();
-        btnChangeEdgework = new Button();
-        btnSaveEdgework = new Button();
-        btnStrike = new Button();
-        button1 = new Button();
-        SuspendLayout();
-        // 
-        // dropDownModules
-        // 
-        dropDownModules.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        dropDownModules.FormattingEnabled = true;
-        dropDownModules.Location = new Point(227, 85);
-        dropDownModules.Margin = new Padding(4, 5, 4, 5);
-        dropDownModules.Name = "dropDownModules";
-        dropDownModules.Size = new Size(360, 37);
-        dropDownModules.TabIndex = 0;
-        // 
-        // label1
-        // 
-        label1.BackColor = Color.Transparent;
-        label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        label1.Location = new Point(15, 85);
-        label1.Margin = new Padding(4, 0, 4, 0);
-        label1.Name = "label1";
-        label1.Size = new Size(204, 44);
-        label1.TabIndex = 1;
-        label1.Text = "Select a module:";
-        // 
-        // btnChangeEdgework
-        // 
-        btnChangeEdgework.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        btnChangeEdgework.Location = new Point(15, 252);
-        btnChangeEdgework.Margin = new Padding(4, 5, 4, 5);
-        btnChangeEdgework.Name = "btnChangeEdgework";
-        btnChangeEdgework.Size = new Size(275, 58);
-        btnChangeEdgework.TabIndex = 2;
-        btnChangeEdgework.Text = "Change Edgework";
-        btnChangeEdgework.UseVisualStyleBackColor = true;
-        btnChangeEdgework.Click += btnChangeEdgework_Click;
-        // 
-        // btnSaveEdgework
-        // 
-        btnSaveEdgework.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        btnSaveEdgework.Location = new Point(312, 252);
-        btnSaveEdgework.Margin = new Padding(4, 5, 4, 5);
-        btnSaveEdgework.Name = "btnSaveEdgework";
-        btnSaveEdgework.Size = new Size(275, 58);
-        btnSaveEdgework.TabIndex = 4;
-        btnSaveEdgework.Text = "Save Edgework";
-        btnSaveEdgework.UseVisualStyleBackColor = true;
-        btnSaveEdgework.Click += saveEdgeworkButton_Click;
-        // 
-        // btnStrike
-        // 
-        btnStrike.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        btnStrike.Location = new Point(15, 328);
-        btnStrike.Margin = new Padding(4, 5, 4, 5);
-        btnStrike.Name = "btnStrike";
-        btnStrike.Size = new Size(275, 58);
-        btnStrike.TabIndex = 5;
-        btnStrike.Text = "Strike";
-        btnStrike.UseVisualStyleBackColor = true;
-        btnStrike.Click += btnStrike_click;
-        // 
-        // button1
-        // 
-        button1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        button1.Location = new Point(312, 328);
-        button1.Margin = new Padding(4, 5, 4, 5);
-        button1.Name = "button1";
-        button1.Size = new Size(275, 58);
-        button1.TabIndex = 6;
-        button1.Text = "Select Module";
-        button1.UseVisualStyleBackColor = true;
-        button1.Click += btnSelect_Click;
-        // 
-        // frmMain
-        // 
-        AutoScaleDimensions = new SizeF(10F, 25F);
-        AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(603, 400);
-        Controls.Add(button1);
-        Controls.Add(btnStrike);
-        Controls.Add(btnSaveEdgework);
-        Controls.Add(btnChangeEdgework);
-        Controls.Add(label1);
-        Controls.Add(dropDownModules);
-        Margin = new Padding(4, 5, 4, 5);
-        Name = "frmMain";
-        Text = "KTANE Assistant";
-        Load += frmMain_Load;
-        ResumeLayout(false);
+            this.dropDownModules = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnChangeEdgework = new System.Windows.Forms.Button();
+            this.btnSaveEdgework = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(76, 108);
+            // 
+            // btnStrike
+            // 
+            this.btnStrike.Location = new System.Drawing.Point(14, 262);
+            this.btnStrike.Size = new System.Drawing.Size(248, 46);
+            // 
+            // btnSolve
+            // 
+            this.btnSolve.Location = new System.Drawing.Point(76, 108);
+            // 
+            // dropDownModules
+            // 
+            this.dropDownModules.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dropDownModules.FormattingEnabled = true;
+            this.dropDownModules.Items.AddRange(new object[] {
+            "3d Maze (DO NOT SELECT)",
+            "Adjacent Letters",
+            "Adventure Game",
+            "Button",
+            "Colour Flash",
+            "Complicated Wires",
+            "Keypads",
+            "Knob",
+            "Maze",
+            "Memory",
+            "Password",
+            "Simon Says",
+            "Wire Sequences",
+            "Wires",
+            "Who\'s On First"});
+            this.dropDownModules.Location = new System.Drawing.Point(204, 68);
+            this.dropDownModules.Margin = new System.Windows.Forms.Padding(4);
+            this.dropDownModules.Name = "dropDownModules";
+            this.dropDownModules.Size = new System.Drawing.Size(324, 37);
+            this.dropDownModules.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(14, 68);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(184, 60);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Select a module:";
+            // 
+            // btnChangeEdgework
+            // 
+            this.btnChangeEdgework.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangeEdgework.Location = new System.Drawing.Point(14, 202);
+            this.btnChangeEdgework.Margin = new System.Windows.Forms.Padding(4);
+            this.btnChangeEdgework.Name = "btnChangeEdgework";
+            this.btnChangeEdgework.Size = new System.Drawing.Size(248, 46);
+            this.btnChangeEdgework.TabIndex = 2;
+            this.btnChangeEdgework.Text = "Change Edgework";
+            this.btnChangeEdgework.UseVisualStyleBackColor = true;
+            this.btnChangeEdgework.Click += new System.EventHandler(this.btnChangeEdgework_Click);
+            // 
+            // btnSaveEdgework
+            // 
+            this.btnSaveEdgework.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveEdgework.Location = new System.Drawing.Point(281, 202);
+            this.btnSaveEdgework.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSaveEdgework.Name = "btnSaveEdgework";
+            this.btnSaveEdgework.Size = new System.Drawing.Size(248, 46);
+            this.btnSaveEdgework.TabIndex = 4;
+            this.btnSaveEdgework.Text = "Save Edgework";
+            this.btnSaveEdgework.UseVisualStyleBackColor = true;
+            this.btnSaveEdgework.Click += new System.EventHandler(this.saveEdgeworkButton_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(281, 262);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(248, 46);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Select Module";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnSelect_Click);
+            // 
+            // frmMain
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(555, 317);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSaveEdgework);
+            this.Controls.Add(this.btnChangeEdgework);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dropDownModules);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "frmMain";
+            this.Text = "KTANE Assistant";
+            this.Controls.SetChildIndex(this.dropDownModules, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.btnChangeEdgework, 0);
+            this.Controls.SetChildIndex(this.btnSaveEdgework, 0);
+            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.btnSolve, 0);
+            this.Controls.SetChildIndex(this.btnStrike, 0);
+            this.Controls.SetChildIndex(this.btnBack, 0);
+            this.ResumeLayout(false);
+
     }
 
     private System.Windows.Forms.Button button1;
-
-    private System.Windows.Forms.Button btnStrike;
     private System.Windows.Forms.Button btnSaveEdgework;
 
     private System.Windows.Forms.Button btnChangeEdgework;

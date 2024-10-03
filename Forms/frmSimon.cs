@@ -5,6 +5,7 @@ public partial class frmSimon : ModuleForm
     public frmSimon()
     {
         InitializeComponent();
+        btnSolve.Visible = false;
     }
 
     private void backButton_Click(object sender, EventArgs e)
@@ -39,7 +40,7 @@ public partial class frmSimon : ModuleForm
 
     private string solve(string colour)
     {
-        if (Assistant.instance.vowelInSerial())
+        if (Assistant.instance.bomb.hasVowelInSerial())
         {
             return withVowel(colour);
         }
@@ -172,15 +173,5 @@ public partial class frmSimon : ModuleForm
             default:
                 return "Invalid";
         }
-    }
-
-    private void strikeButton_Click(object sender, EventArgs e)
-    {
-        if (ModifierKeys.HasFlag(Keys.Shift))
-        {
-            Assistant.instance.strikes--;
-            return;
-        }
-        Assistant.instance.strikes++;
     }
 }

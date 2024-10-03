@@ -1,4 +1,6 @@
-﻿namespace KTANE_Diffuser_Winforms.Forms;
+﻿using KTANE_Diffuser_Winforms.Modules;
+
+namespace KTANE_Diffuser_Winforms.Forms;
 
 public partial class frmMazeAnswer : ModuleForm
 {
@@ -12,6 +14,7 @@ public partial class frmMazeAnswer : ModuleForm
     public frmMazeAnswer(List<Maze.Coordinate> correctSpots)
     {
         InitializeComponent();
+        disableButtons();
 
         this.correctSpots = correctSpots;
 

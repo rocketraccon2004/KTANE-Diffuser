@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace KTANE_Diffuser_Winforms.Forms;
 
@@ -13,7 +14,11 @@ public partial class frmEdgeworkMode : ModuleForm
 
     private void automaticButton_Click(object sender, EventArgs e)
     {
-        StreamReader sr = new StreamReader("Edgework.json");
+        if (!File.Exists("Edgework.json"))
+        {
+			MessageBox.Show("The Edgework.json file does not exist.", "Error - KTANE Diffuser", MessageBoxButtons.OK, MessageBoxIcon.Error);
+		}
+		StreamReader sr = new StreamReader("Edgework.json");
         string json = string.Empty;
         for (int line = 1; line <= File.ReadAllLines("Edgework.json").Length; line++)
         {

@@ -35,10 +35,11 @@ partial class frmButton
             this.dropDownText = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnSolve = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnSolve
+            // 
+            this.btnSolve.Click += new System.EventHandler(this.solve);
             // 
             // dropDownColour
             // 
@@ -49,9 +50,10 @@ partial class frmButton
             "White",
             "Yellow",
             "Red"});
-            this.dropDownColour.Location = new System.Drawing.Point(285, 42);
+            this.dropDownColour.Location = new System.Drawing.Point(391, 43);
+            this.dropDownColour.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dropDownColour.Name = "dropDownColour";
-            this.dropDownColour.Size = new System.Drawing.Size(263, 33);
+            this.dropDownColour.Size = new System.Drawing.Size(295, 37);
             this.dropDownColour.TabIndex = 2;
             // 
             // dropDownText
@@ -63,79 +65,48 @@ partial class frmButton
             "Detonate",
             "Hold",
             "Press"});
-            this.dropDownText.Location = new System.Drawing.Point(285, 118);
+            this.dropDownText.Location = new System.Drawing.Point(391, 139);
+            this.dropDownText.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dropDownText.Name = "dropDownText";
-            this.dropDownText.Size = new System.Drawing.Size(263, 33);
+            this.dropDownText.Size = new System.Drawing.Size(295, 37);
             this.dropDownText.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(186, 42);
+            this.label1.Location = new System.Drawing.Point(279, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 28);
+            this.label1.Size = new System.Drawing.Size(105, 35);
             this.label1.TabIndex = 4;
             this.label1.Text = "Colour";
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(186, 121);
+            this.label2.Location = new System.Drawing.Point(279, 142);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 28);
+            this.label2.Size = new System.Drawing.Size(94, 35);
             this.label2.TabIndex = 5;
             this.label2.Text = "Label";
             // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(13, 197);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(161, 54);
-            this.button2.TabIndex = 75;
-            this.button2.Text = "Back";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(191, 197);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 54);
-            this.button1.TabIndex = 74;
-            this.button1.Text = "Strike";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.btnStrike_Click);
-            // 
-            // btnSolve
-            // 
-            this.btnSolve.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSolve.Location = new System.Drawing.Point(371, 197);
-            this.btnSolve.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSolve.Name = "btnSolve";
-            this.btnSolve.Size = new System.Drawing.Size(161, 54);
-            this.btnSolve.TabIndex = 73;
-            this.btnSolve.Text = "Solve";
-            this.btnSolve.UseVisualStyleBackColor = true;
-            this.btnSolve.Click += new System.EventHandler(this.btnSubmit_Click);
-            // 
             // frmButton
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(567, 292);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnSolve);
+            this.ClientSize = new System.Drawing.Size(1008, 483);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dropDownText);
             this.Controls.Add(this.dropDownColour);
             this.Name = "frmButton";
             this.Text = "Button";
+            this.Controls.SetChildIndex(this.dropDownColour, 0);
+            this.Controls.SetChildIndex(this.dropDownText, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.btnSolve, 0);
+            this.Controls.SetChildIndex(this.btnStrike, 0);
+            this.Controls.SetChildIndex(this.btnBack, 0);
             this.ResumeLayout(false);
 
     }
@@ -148,8 +119,4 @@ partial class frmButton
     private System.Windows.Forms.ComboBox dropDownColour;
 
     #endregion
-
-    private Button button2;
-    private Button button1;
-    private Button btnSolve;
 }

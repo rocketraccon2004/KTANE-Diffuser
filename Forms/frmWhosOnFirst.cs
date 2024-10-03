@@ -6,21 +6,7 @@ public partial class frmWhosOnFirst : ModuleForm
     public frmWhosOnFirst()
     {
         InitializeComponent();
-    }
-
-    private void backButton_Click(object sender, EventArgs e)
-    {
-        Program.switchForm(Utils.getMainForm());
-    }
-
-    private void strikeButton_Click(object sender, EventArgs e)
-    {
-        if (ModifierKeys.HasFlag(Keys.Shift))
-        {
-            Assistant.instance.strikes--;
-            return;
-        }
-        Assistant.instance.strikes++;
+        btnSolve.Visible = false;
     }
 
     private void btnSubmit1_Click(object sender, EventArgs e)

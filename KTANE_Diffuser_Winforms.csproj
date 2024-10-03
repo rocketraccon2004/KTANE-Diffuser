@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>default</LangVersion>
    </PropertyGroup>
 
   <ItemGroup>
@@ -119,6 +120,23 @@
     <None Update="Files\Who's On First.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Forms\ModuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmAdventureGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\jolyo\KTANE-Diffuser\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\jolyo\KTANE-Diffuser\.editorconfig" />
   </ItemGroup>
 
 </Project>

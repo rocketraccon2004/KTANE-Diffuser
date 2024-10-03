@@ -28,225 +28,208 @@ partial class frmSimon
     /// </summary>
     private void InitializeComponent()
     {
-        strikeButton = new Button();
-        backButton = new Button();
-        label1 = new Label();
-        label2 = new Label();
-        label3 = new Label();
-        label4 = new Label();
-        txtRound1 = new TextBox();
-        txtRound5 = new TextBox();
-        txtRound4 = new TextBox();
-        txtRound3 = new TextBox();
-        txtRound2 = new TextBox();
-        lblRound1 = new Label();
-        lblRound2 = new Label();
-        lblRound3 = new Label();
-        lblRound4 = new Label();
-        lblRound5 = new Label();
-        backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-        SuspendLayout();
-        // 
-        // strikeButton
-        // 
-        strikeButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        strikeButton.Location = new Point(397, 580);
-        strikeButton.Margin = new Padding(6, 7, 6, 7);
-        strikeButton.Name = "strikeButton";
-        strikeButton.Size = new Size(201, 85);
-        strikeButton.TabIndex = 74;
-        strikeButton.Text = "Strike";
-        strikeButton.UseVisualStyleBackColor = true;
-        strikeButton.Click += strikeButton_Click;
-        // 
-        // backButton
-        // 
-        backButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        backButton.Location = new Point(36, 580);
-        backButton.Margin = new Padding(6, 7, 6, 7);
-        backButton.Name = "backButton";
-        backButton.Size = new Size(201, 85);
-        backButton.TabIndex = 72;
-        backButton.Text = "Back";
-        backButton.UseVisualStyleBackColor = true;
-        backButton.Click += backButton_Click;
-        // 
-        // label1
-        // 
-        label1.AutoSize = true;
-        label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        label1.Location = new Point(64, 35);
-        label1.Margin = new Padding(4, 0, 4, 0);
-        label1.Name = "label1";
-        label1.Size = new Size(95, 29);
-        label1.TabIndex = 75;
-        label1.Text = "R - Red";
-        // 
-        // label2
-        // 
-        label2.AutoSize = true;
-        label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        label2.Location = new Point(64, 152);
-        label2.Margin = new Padding(4, 0, 4, 0);
-        label2.Name = "label2";
-        label2.Size = new Size(123, 29);
-        label2.TabIndex = 76;
-        label2.Text = "Y - Yellow";
-        // 
-        // label3
-        // 
-        label3.AutoSize = true;
-        label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        label3.Location = new Point(64, 113);
-        label3.Margin = new Padding(4, 0, 4, 0);
-        label3.Name = "label3";
-        label3.Size = new Size(118, 29);
-        label3.TabIndex = 77;
-        label3.Text = "G - Green";
-        // 
-        // label4
-        // 
-        label4.AutoSize = true;
-        label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        label4.Location = new Point(64, 73);
-        label4.Margin = new Padding(4, 0, 4, 0);
-        label4.Name = "label4";
-        label4.Size = new Size(98, 29);
-        label4.TabIndex = 78;
-        label4.Text = "B - Blue";
-        // 
-        // txtRound1
-        // 
-        txtRound1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        txtRound1.Location = new Point(397, 30);
-        txtRound1.Margin = new Padding(4, 5, 4, 5);
-        txtRound1.Name = "txtRound1";
-        txtRound1.Size = new Size(81, 35);
-        txtRound1.TabIndex = 79;
-        txtRound1.TextChanged += solveRound1;
-        // 
-        // txtRound5
-        // 
-        txtRound5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        txtRound5.Location = new Point(397, 263);
-        txtRound5.Margin = new Padding(4, 5, 4, 5);
-        txtRound5.Name = "txtRound5";
-        txtRound5.Size = new Size(81, 35);
-        txtRound5.TabIndex = 81;
-        txtRound5.TextChanged += solveRound5;
-        // 
-        // txtRound4
-        // 
-        txtRound4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        txtRound4.Location = new Point(397, 208);
-        txtRound4.Margin = new Padding(4, 5, 4, 5);
-        txtRound4.Name = "txtRound4";
-        txtRound4.Size = new Size(81, 35);
-        txtRound4.TabIndex = 82;
-        txtRound4.TextChanged += solveRound4;
-        // 
-        // txtRound3
-        // 
-        txtRound3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        txtRound3.Location = new Point(397, 152);
-        txtRound3.Margin = new Padding(4, 5, 4, 5);
-        txtRound3.Name = "txtRound3";
-        txtRound3.Size = new Size(81, 35);
-        txtRound3.TabIndex = 83;
-        txtRound3.TextChanged += solveRound3;
-        // 
-        // txtRound2
-        // 
-        txtRound2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        txtRound2.Location = new Point(397, 87);
-        txtRound2.Margin = new Padding(4, 5, 4, 5);
-        txtRound2.Name = "txtRound2";
-        txtRound2.Size = new Size(81, 35);
-        txtRound2.TabIndex = 84;
-        txtRound2.TextChanged += solveRound2;
-        // 
-        // lblRound1
-        // 
-        lblRound1.AutoSize = true;
-        lblRound1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        lblRound1.Location = new Point(499, 35);
-        lblRound1.Margin = new Padding(4, 0, 4, 0);
-        lblRound1.Name = "lblRound1";
-        lblRound1.Size = new Size(0, 29);
-        lblRound1.TabIndex = 85;
-        // 
-        // lblRound2
-        // 
-        lblRound2.AutoSize = true;
-        lblRound2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        lblRound2.Location = new Point(501, 87);
-        lblRound2.Margin = new Padding(4, 0, 4, 0);
-        lblRound2.Name = "lblRound2";
-        lblRound2.Size = new Size(0, 29);
-        lblRound2.TabIndex = 86;
-        // 
-        // lblRound3
-        // 
-        lblRound3.AutoSize = true;
-        lblRound3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        lblRound3.Location = new Point(499, 163);
-        lblRound3.Margin = new Padding(4, 0, 4, 0);
-        lblRound3.Name = "lblRound3";
-        lblRound3.Size = new Size(0, 29);
-        lblRound3.TabIndex = 87;
-        // 
-        // lblRound4
-        // 
-        lblRound4.AutoSize = true;
-        lblRound4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        lblRound4.Location = new Point(499, 223);
-        lblRound4.Margin = new Padding(4, 0, 4, 0);
-        lblRound4.Name = "lblRound4";
-        lblRound4.Size = new Size(0, 29);
-        lblRound4.TabIndex = 88;
-        // 
-        // lblRound5
-        // 
-        lblRound5.AutoSize = true;
-        lblRound5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        lblRound5.Location = new Point(487, 280);
-        lblRound5.Margin = new Padding(4, 0, 4, 0);
-        lblRound5.Name = "lblRound5";
-        lblRound5.Size = new Size(0, 29);
-        lblRound5.TabIndex = 89;
-        // 
-        // frmSimon
-        // 
-        AutoScaleDimensions = new SizeF(10F, 25F);
-        AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(641, 703);
-        Controls.Add(lblRound5);
-        Controls.Add(lblRound4);
-        Controls.Add(lblRound3);
-        Controls.Add(lblRound2);
-        Controls.Add(lblRound1);
-        Controls.Add(txtRound2);
-        Controls.Add(txtRound3);
-        Controls.Add(txtRound4);
-        Controls.Add(txtRound5);
-        Controls.Add(txtRound1);
-        Controls.Add(label4);
-        Controls.Add(label3);
-        Controls.Add(label2);
-        Controls.Add(label1);
-        Controls.Add(strikeButton);
-        Controls.Add(backButton);
-        Margin = new Padding(4, 5, 4, 5);
-        Name = "frmSimon";
-        Text = "Simon Says";
-        ResumeLayout(false);
-        PerformLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtRound1 = new System.Windows.Forms.TextBox();
+            this.txtRound5 = new System.Windows.Forms.TextBox();
+            this.txtRound4 = new System.Windows.Forms.TextBox();
+            this.txtRound3 = new System.Windows.Forms.TextBox();
+            this.txtRound2 = new System.Windows.Forms.TextBox();
+            this.lblRound1 = new System.Windows.Forms.Label();
+            this.lblRound2 = new System.Windows.Forms.Label();
+            this.lblRound3 = new System.Windows.Forms.Label();
+            this.lblRound4 = new System.Windows.Forms.Label();
+            this.lblRound5 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(58, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 29);
+            this.label1.TabIndex = 75;
+            this.label1.Text = "R - Red";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(58, 122);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(123, 29);
+            this.label2.TabIndex = 76;
+            this.label2.Text = "Y - Yellow";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(58, 90);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(118, 29);
+            this.label3.TabIndex = 77;
+            this.label3.Text = "G - Green";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(58, 58);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(98, 29);
+            this.label4.TabIndex = 78;
+            this.label4.Text = "B - Blue";
+            // 
+            // txtRound1
+            // 
+            this.txtRound1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRound1.Location = new System.Drawing.Point(357, 24);
+            this.txtRound1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRound1.Name = "txtRound1";
+            this.txtRound1.Size = new System.Drawing.Size(73, 35);
+            this.txtRound1.TabIndex = 79;
+            // 
+            // txtRound5
+            // 
+            this.txtRound5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRound5.Location = new System.Drawing.Point(357, 210);
+            this.txtRound5.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRound5.Name = "txtRound5";
+            this.txtRound5.Size = new System.Drawing.Size(73, 35);
+            this.txtRound5.TabIndex = 81;
+            // 
+            // txtRound4
+            // 
+            this.txtRound4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRound4.Location = new System.Drawing.Point(357, 166);
+            this.txtRound4.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRound4.Name = "txtRound4";
+            this.txtRound4.Size = new System.Drawing.Size(73, 35);
+            this.txtRound4.TabIndex = 82;
+            // 
+            // txtRound3
+            // 
+            this.txtRound3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRound3.Location = new System.Drawing.Point(357, 122);
+            this.txtRound3.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRound3.Name = "txtRound3";
+            this.txtRound3.Size = new System.Drawing.Size(73, 35);
+            this.txtRound3.TabIndex = 83;
+            // 
+            // txtRound2
+            // 
+            this.txtRound2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRound2.Location = new System.Drawing.Point(357, 70);
+            this.txtRound2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRound2.Name = "txtRound2";
+            this.txtRound2.Size = new System.Drawing.Size(73, 35);
+            this.txtRound2.TabIndex = 84;
+            // 
+            // lblRound1
+            // 
+            this.lblRound1.AutoSize = true;
+            this.lblRound1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRound1.Location = new System.Drawing.Point(449, 28);
+            this.lblRound1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRound1.Name = "lblRound1";
+            this.lblRound1.Size = new System.Drawing.Size(0, 29);
+            this.lblRound1.TabIndex = 85;
+            // 
+            // lblRound2
+            // 
+            this.lblRound2.AutoSize = true;
+            this.lblRound2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRound2.Location = new System.Drawing.Point(451, 70);
+            this.lblRound2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRound2.Name = "lblRound2";
+            this.lblRound2.Size = new System.Drawing.Size(0, 29);
+            this.lblRound2.TabIndex = 86;
+            // 
+            // lblRound3
+            // 
+            this.lblRound3.AutoSize = true;
+            this.lblRound3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRound3.Location = new System.Drawing.Point(449, 130);
+            this.lblRound3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRound3.Name = "lblRound3";
+            this.lblRound3.Size = new System.Drawing.Size(0, 29);
+            this.lblRound3.TabIndex = 87;
+            // 
+            // lblRound4
+            // 
+            this.lblRound4.AutoSize = true;
+            this.lblRound4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRound4.Location = new System.Drawing.Point(449, 178);
+            this.lblRound4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRound4.Name = "lblRound4";
+            this.lblRound4.Size = new System.Drawing.Size(0, 29);
+            this.lblRound4.TabIndex = 88;
+            // 
+            // lblRound5
+            // 
+            this.lblRound5.AutoSize = true;
+            this.lblRound5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRound5.Location = new System.Drawing.Point(438, 224);
+            this.lblRound5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRound5.Name = "lblRound5";
+            this.lblRound5.Size = new System.Drawing.Size(0, 29);
+            this.lblRound5.TabIndex = 89;
+            // 
+            // frmSimon
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(806, 442);
+            this.Controls.Add(this.lblRound5);
+            this.Controls.Add(this.lblRound4);
+            this.Controls.Add(this.lblRound3);
+            this.Controls.Add(this.lblRound2);
+            this.Controls.Add(this.lblRound1);
+            this.Controls.Add(this.txtRound2);
+            this.Controls.Add(this.txtRound3);
+            this.Controls.Add(this.txtRound4);
+            this.Controls.Add(this.txtRound5);
+            this.Controls.Add(this.txtRound1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "frmSimon";
+            this.Text = "Simon Says";
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.label3, 0);
+            this.Controls.SetChildIndex(this.label4, 0);
+            this.Controls.SetChildIndex(this.txtRound1, 0);
+            this.Controls.SetChildIndex(this.txtRound5, 0);
+            this.Controls.SetChildIndex(this.txtRound4, 0);
+            this.Controls.SetChildIndex(this.txtRound3, 0);
+            this.Controls.SetChildIndex(this.txtRound2, 0);
+            this.Controls.SetChildIndex(this.lblRound1, 0);
+            this.Controls.SetChildIndex(this.lblRound2, 0);
+            this.Controls.SetChildIndex(this.lblRound3, 0);
+            this.Controls.SetChildIndex(this.lblRound4, 0);
+            this.Controls.SetChildIndex(this.lblRound5, 0);
+            this.Controls.SetChildIndex(this.btnSolve, 0);
+            this.Controls.SetChildIndex(this.btnStrike, 0);
+            this.Controls.SetChildIndex(this.btnBack, 0);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
     }
 
     #endregion
-
-    private Button strikeButton;
-    private Button backButton;
     private Label label1;
     private Label label2;
     private Label label3;
@@ -261,5 +244,4 @@ partial class frmSimon
     private Label lblRound3;
     private Label lblRound4;
     private Label lblRound5;
-    private System.ComponentModel.BackgroundWorker backgroundWorker1;
 }

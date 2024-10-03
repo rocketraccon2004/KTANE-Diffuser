@@ -28,134 +28,112 @@ partial class frmMemory
     /// </summary>
     private void InitializeComponent()
     {
-        btnBack = new Button();
-        button1 = new Button();
-        btnSolve = new Button();
-        txtNum1 = new TextBox();
-        txtNum2 = new TextBox();
-        txtNum3 = new TextBox();
-        txtNum4 = new TextBox();
-        txtDisplay = new TextBox();
-        lblRound = new Label();
-        SuspendLayout();
-        // 
-        // btnBack
-        // 
-        btnBack.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        btnBack.Location = new Point(28, 251);
-        btnBack.Margin = new Padding(4);
-        btnBack.Name = "btnBack";
-        btnBack.Size = new Size(141, 51);
-        btnBack.TabIndex = 75;
-        btnBack.Text = "Back";
-        btnBack.UseVisualStyleBackColor = true;
-        btnBack.Click += btnBack_Click;
-        // 
-        // button1
-        // 
-        button1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        button1.Location = new Point(184, 251);
-        button1.Margin = new Padding(4);
-        button1.Name = "button1";
-        button1.Size = new Size(141, 51);
-        button1.TabIndex = 74;
-        button1.Text = "Strike";
-        button1.UseVisualStyleBackColor = true;
-        button1.Click += button1_Click;
-        // 
-        // btnSolve
-        // 
-        btnSolve.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        btnSolve.Location = new Point(342, 251);
-        btnSolve.Margin = new Padding(4);
-        btnSolve.Name = "btnSolve";
-        btnSolve.Size = new Size(141, 51);
-        btnSolve.TabIndex = 73;
-        btnSolve.Text = "Solve";
-        btnSolve.UseVisualStyleBackColor = true;
-        btnSolve.Click += btnSolve_Click;
-        // 
-        // txtNum1
-        // 
-        txtNum1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        txtNum1.Location = new Point(148, 153);
-        txtNum1.Name = "txtNum1";
-        txtNum1.Size = new Size(45, 29);
-        txtNum1.TabIndex = 76;
-        txtNum1.TextAlign = HorizontalAlignment.Center;
-        // 
-        // txtNum2
-        // 
-        txtNum2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        txtNum2.Location = new Point(199, 153);
-        txtNum2.Name = "txtNum2";
-        txtNum2.Size = new Size(45, 29);
-        txtNum2.TabIndex = 77;
-        txtNum2.TextAlign = HorizontalAlignment.Center;
-        // 
-        // txtNum3
-        // 
-        txtNum3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        txtNum3.Location = new Point(250, 153);
-        txtNum3.Name = "txtNum3";
-        txtNum3.Size = new Size(45, 29);
-        txtNum3.TabIndex = 78;
-        txtNum3.TextAlign = HorizontalAlignment.Center;
-        // 
-        // txtNum4
-        // 
-        txtNum4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        txtNum4.Location = new Point(301, 153);
-        txtNum4.Name = "txtNum4";
-        txtNum4.Size = new Size(45, 29);
-        txtNum4.TabIndex = 79;
-        txtNum4.TextAlign = HorizontalAlignment.Center;
-        // 
-        // txtDisplay
-        // 
-        txtDisplay.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        txtDisplay.Location = new Point(148, 79);
-        txtDisplay.Name = "txtDisplay";
-        txtDisplay.Size = new Size(198, 50);
-        txtDisplay.TabIndex = 80;
-        txtDisplay.TextAlign = HorizontalAlignment.Center;
-        // 
-        // lblRound
-        // 
-        lblRound.AutoSize = true;
-        lblRound.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        lblRound.Location = new Point(148, 24);
-        lblRound.Name = "lblRound";
-        lblRound.Size = new Size(90, 37);
-        lblRound.TabIndex = 81;
-        lblRound.Text = "label1";
-        // 
-        // frmMemory
-        // 
-        AutoScaleDimensions = new SizeF(7F, 15F);
-        AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(526, 315);
-        Controls.Add(lblRound);
-        Controls.Add(txtDisplay);
-        Controls.Add(txtNum4);
-        Controls.Add(txtNum3);
-        Controls.Add(txtNum2);
-        Controls.Add(txtNum1);
-        Controls.Add(btnBack);
-        Controls.Add(button1);
-        Controls.Add(btnSolve);
-        Name = "frmMemory";
-        Text = "Memory";
-        Load += frmMemory_Load;
-        ResumeLayout(false);
-        PerformLayout();
+            this.txtNum1 = new System.Windows.Forms.TextBox();
+            this.txtNum2 = new System.Windows.Forms.TextBox();
+            this.txtNum3 = new System.Windows.Forms.TextBox();
+            this.txtNum4 = new System.Windows.Forms.TextBox();
+            this.txtDisplay = new System.Windows.Forms.TextBox();
+            this.lblRound = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // btnBack
+            // 
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // btnSolve
+            // 
+            this.btnSolve.Click += new System.EventHandler(this.btnSolve_Click);
+            // 
+            // txtNum1
+            // 
+            this.txtNum1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNum1.Location = new System.Drawing.Point(190, 204);
+            this.txtNum1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNum1.Name = "txtNum1";
+            this.txtNum1.Size = new System.Drawing.Size(57, 39);
+            this.txtNum1.TabIndex = 76;
+            this.txtNum1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtNum2
+            // 
+            this.txtNum2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNum2.Location = new System.Drawing.Point(256, 204);
+            this.txtNum2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNum2.Name = "txtNum2";
+            this.txtNum2.Size = new System.Drawing.Size(57, 39);
+            this.txtNum2.TabIndex = 77;
+            this.txtNum2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtNum3
+            // 
+            this.txtNum3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNum3.Location = new System.Drawing.Point(321, 204);
+            this.txtNum3.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNum3.Name = "txtNum3";
+            this.txtNum3.Size = new System.Drawing.Size(57, 39);
+            this.txtNum3.TabIndex = 78;
+            this.txtNum3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtNum4
+            // 
+            this.txtNum4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNum4.Location = new System.Drawing.Point(387, 204);
+            this.txtNum4.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNum4.Name = "txtNum4";
+            this.txtNum4.Size = new System.Drawing.Size(57, 39);
+            this.txtNum4.TabIndex = 79;
+            this.txtNum4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtDisplay
+            // 
+            this.txtDisplay.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDisplay.Location = new System.Drawing.Point(190, 105);
+            this.txtDisplay.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDisplay.Name = "txtDisplay";
+            this.txtDisplay.Size = new System.Drawing.Size(253, 71);
+            this.txtDisplay.TabIndex = 80;
+            this.txtDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblRound
+            // 
+            this.lblRound.AutoSize = true;
+            this.lblRound.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRound.Location = new System.Drawing.Point(190, 32);
+            this.lblRound.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRound.Name = "lblRound";
+            this.lblRound.Size = new System.Drawing.Size(130, 54);
+            this.lblRound.TabIndex = 81;
+            this.lblRound.Text = "label1";
+            // 
+            // frmMemory
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(676, 420);
+            this.Controls.Add(this.lblRound);
+            this.Controls.Add(this.txtDisplay);
+            this.Controls.Add(this.txtNum4);
+            this.Controls.Add(this.txtNum3);
+            this.Controls.Add(this.txtNum2);
+            this.Controls.Add(this.txtNum1);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "frmMemory";
+            this.Text = "Memory";
+            this.Controls.SetChildIndex(this.txtNum1, 0);
+            this.Controls.SetChildIndex(this.txtNum2, 0);
+            this.Controls.SetChildIndex(this.txtNum3, 0);
+            this.Controls.SetChildIndex(this.txtNum4, 0);
+            this.Controls.SetChildIndex(this.txtDisplay, 0);
+            this.Controls.SetChildIndex(this.lblRound, 0);
+            this.Controls.SetChildIndex(this.btnSolve, 0);
+            this.Controls.SetChildIndex(this.btnStrike, 0);
+            this.Controls.SetChildIndex(this.btnBack, 0);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
     }
 
     #endregion
-
-    private Button btnBack;
-    private Button button1;
-    private Button btnSolve;
     private TextBox txtNum1;
     private TextBox txtNum2;
     private TextBox txtNum3;

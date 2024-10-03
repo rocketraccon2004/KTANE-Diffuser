@@ -8,16 +8,8 @@ public partial class frmMain : ModuleForm
     public frmMain()
     {
         InitializeComponent();
-    }
-
-    private void frmMain_Load(object sender, EventArgs e)
-    {
-        setModules();
-    }
-
-    private void setModules()
-    {
-        foreach (var s in Assistant.instance.modules) dropDownModules.Items.Add(s);
+        btnSolve.Visible = false;
+        btnBack.Visible = false;
     }
 
     private void saveEdgeworkButton_Click(object sender, EventArgs e)

@@ -1,4 +1,5 @@
 ﻿using KTANE_Diffuser_Winforms.Forms;
+using System.Windows.Forms;
 
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
 namespace KTANE_Diffuser_Winforms;
@@ -6,6 +7,7 @@ namespace KTANE_Diffuser_Winforms;
 public class Utils
 {
     private static frmAdjacentLetters adjacentLetters;
+    private static frmAdventureGame adventureGame;
     private static frmButton button;
     private static frmComplicatedWires complicatedWires;
     private static frmColourFlash colourFlash;
@@ -13,7 +15,6 @@ public class Utils
     private static frmKeypads keypads;
     private static frmKnob knob;
     private static frmMain main;
-    private static frmMorseCode morseCode;
     private static frmMaze maze;
     private static frmMemory memory;
     private static frmPassword password;
@@ -34,91 +35,91 @@ public class Utils
                 }
                 return dMaze;*/
             case "Adjacent Letters":
-                if (adjacentLetters == null)
+                if (adjacentLetters is null)
                 {
                     adjacentLetters = new frmAdjacentLetters();
                 }
                 return adjacentLetters;
+            case "Adventure Game":
+                if (adventureGame is null)
+                {
+                    adventureGame = new frmAdventureGame();
+                }
+                return adventureGame;
             case "Button":
-                if (button == null)
+                if (button is null)
                 {
                     button = new frmButton();
                 }
                 return button;
             case "Complicated Wires":
-                if (complicatedWires == null)
+                if (complicatedWires is null)
                 {
                     complicatedWires = new frmComplicatedWires();
                 }
                 return complicatedWires;
             case "Colour Flash":
-                if (colourFlash == null)
+                if (colourFlash is null)
                 {
                     colourFlash = new frmColourFlash();
                 }
                 return colourFlash;
             case "Edgework Input":
-                if (edgeworkInput == null)
+                if (edgeworkInput is null)
                 {
                     edgeworkInput = new frmEdgeworkInput();
                 }
                 return edgeworkInput;
             case "Keypads":
-                if (keypads == null)
+                if (keypads is null)
                 {
                     keypads = new frmKeypads();
                 }
                 return keypads;
             case "Knob":
-                if (knob == null)
+                if (knob is null)
                 {
                     knob = new frmKnob();
                 }
                 return knob;
             case "Maze":
-                if (maze == null)
+                if (maze is null)
                 {
                     maze = new frmMaze();
                 }
                 return maze;
             case "Memory":
-                if (memory == null)
+                if (memory is null)
                 {
                     memory = new frmMemory();
                 }
                 return memory;
-            case "Morse Code":
-                if (morseCode == null)
-                {
-                    morseCode = new frmMorseCode();
-                }
-                return morseCode;
             case "Password":
-                if (password == null)
+                if (password is null)
                 {
                     password = new frmPassword();
                 }
                 return password;
             case "Simon Says":
-                if (simonSays == null)
+                if (simonSays is null)
                 {
                     simonSays = new frmSimon();
                 }
                 return simonSays;
             case "Wires":
-                if (wires == null)
+                if (wires is null)
                 {
                     wires = new frmWires();
                 }
                 return wires;
             case "Wire Sequences":
-                if (wireSequences == null)
+                if (wireSequences is null)
                 {
                     wireSequences = new frmWireSequences();
                 }
                 return wireSequences;
             case "Who's On First":
-                if (whosOnFirst == null)
+                if (whosOnFirst is null)
                 {
                     whosOnFirst = new frmWhosOnFirst();
                 }
@@ -137,18 +138,8 @@ public class Utils
         return main;
     }
 
-    public static bool isOdd(int num)
-    {
-        return num % 2 != 0;
-    }
-
-    public static bool vowel(string toTest)
-    {
-        return toTest.Contains('A') | toTest.Contains('E') | toTest.Contains('I') | toTest.Contains('O') | toTest.Contains('U');
-    }
-
-    public static void throwError(string error)
-    {
-        MessageBox.Show(error, "Error - KTANE Diffuser", MessageBoxButtons.OK, MessageBoxIcon.Error);
-    }
+	public static void throwError (string error)
+	{
+		MessageBox.Show(error, "Error - KTANE Diffuser", MessageBoxButtons.OK, MessageBoxIcon.Error);
+	}
 }

@@ -16,6 +16,7 @@ public partial class frmPlates : ModuleForm
     public frmPlates()
     {
         InitializeComponent();
+        disableButtons();
     }
 
     public void start(int batteries, int holders, int plates, Day day, List<Indicator> indicators, string serial)

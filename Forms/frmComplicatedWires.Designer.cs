@@ -28,120 +28,88 @@ partial class frmComplicatedWires
     /// </summary>
     private void InitializeComponent()
     {
-        btnBack = new Button();
-        btnStrike = new Button();
-        btnSolve = new Button();
-        cbRedWire = new CheckBox();
-        cbBlueWire = new CheckBox();
-        cbLED = new CheckBox();
-        cbStar = new CheckBox();
-        SuspendLayout();
-        // 
-        // btnBack
-        // 
-        btnBack.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        btnBack.Location = new Point(13, 210);
-        btnBack.Margin = new Padding(4);
-        btnBack.Name = "btnBack";
-        btnBack.Size = new Size(141, 51);
-        btnBack.TabIndex = 78;
-        btnBack.Text = "Back";
-        btnBack.UseVisualStyleBackColor = true;
-        btnBack.Click += btnBack_Click;
-        // 
-        // btnStrike
-        // 
-        btnStrike.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        btnStrike.Location = new Point(172, 210);
-        btnStrike.Margin = new Padding(4);
-        btnStrike.Name = "btnStrike";
-        btnStrike.Size = new Size(141, 51);
-        btnStrike.TabIndex = 77;
-        btnStrike.Text = "Strike";
-        btnStrike.UseVisualStyleBackColor = true;
-        btnStrike.Click += btnStrike_Click;
-        // 
-        // btnSolve
-        // 
-        btnSolve.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        btnSolve.Location = new Point(321, 210);
-        btnSolve.Margin = new Padding(4);
-        btnSolve.Name = "btnSolve";
-        btnSolve.Size = new Size(141, 51);
-        btnSolve.TabIndex = 76;
-        btnSolve.Text = "Solve";
-        btnSolve.UseVisualStyleBackColor = true;
-        btnSolve.Click += btnSolve_Click;
-        // 
-        // cbRedWire
-        // 
-        cbRedWire.AutoSize = true;
-        cbRedWire.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        cbRedWire.Location = new Point(154, 23);
-        cbRedWire.Name = "cbRedWire";
-        cbRedWire.Size = new Size(121, 34);
-        cbRedWire.TabIndex = 79;
-        cbRedWire.Text = "Red Wire";
-        cbRedWire.UseVisualStyleBackColor = true;
-        // 
-        // cbBlueWire
-        // 
-        cbBlueWire.AutoSize = true;
-        cbBlueWire.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        cbBlueWire.Location = new Point(154, 63);
-        cbBlueWire.Name = "cbBlueWire";
-        cbBlueWire.Size = new Size(126, 34);
-        cbBlueWire.TabIndex = 80;
-        cbBlueWire.Text = "Blue Wire";
-        cbBlueWire.UseVisualStyleBackColor = true;
-        // 
-        // cbLED
-        // 
-        cbLED.AutoSize = true;
-        cbLED.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        cbLED.Location = new Point(154, 103);
-        cbLED.Name = "cbLED";
-        cbLED.Size = new Size(103, 34);
-        cbLED.TabIndex = 81;
-        cbLED.Text = "LED On";
-        cbLED.UseVisualStyleBackColor = true;
-        // 
-        // cbStar
-        // 
-        cbStar.AutoSize = true;
-        cbStar.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        cbStar.Location = new Point(154, 143);
-        cbStar.Name = "cbStar";
-        cbStar.Size = new Size(147, 34);
-        cbStar.TabIndex = 82;
-        cbStar.Text = "Star Present";
-        cbStar.UseVisualStyleBackColor = true;
-        // 
-        // frmComplicatedWires
-        // 
-        AutoScaleDimensions = new SizeF(7F, 15F);
-        AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(493, 273);
-        Controls.Add(cbStar);
-        Controls.Add(cbLED);
-        Controls.Add(cbBlueWire);
-        Controls.Add(cbRedWire);
-        Controls.Add(btnBack);
-        Controls.Add(btnStrike);
-        Controls.Add(btnSolve);
-        Name = "frmComplicatedWires";
-        Text = "Complicated Wires";
-        ResumeLayout(false);
-        PerformLayout();
+            this.cbRedWire = new System.Windows.Forms.CheckBox();
+            this.cbBlueWire = new System.Windows.Forms.CheckBox();
+            this.cbLED = new System.Windows.Forms.CheckBox();
+            this.cbStar = new System.Windows.Forms.CheckBox();
+            this.SuspendLayout();
+            // 
+            // btnSolve
+            // 
+            this.btnSolve.Click += new System.EventHandler(this.btnSolve_Click);
+            // 
+            // cbRedWire
+            // 
+            this.cbRedWire.AutoSize = true;
+            this.cbRedWire.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbRedWire.Location = new System.Drawing.Point(337, 65);
+            this.cbRedWire.Name = "cbRedWire";
+            this.cbRedWire.Size = new System.Drawing.Size(175, 49);
+            this.cbRedWire.TabIndex = 79;
+            this.cbRedWire.Text = "Red Wire";
+            this.cbRedWire.UseVisualStyleBackColor = true;
+            // 
+            // cbBlueWire
+            // 
+            this.cbBlueWire.AutoSize = true;
+            this.cbBlueWire.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbBlueWire.Location = new System.Drawing.Point(337, 135);
+            this.cbBlueWire.Name = "cbBlueWire";
+            this.cbBlueWire.Size = new System.Drawing.Size(182, 49);
+            this.cbBlueWire.TabIndex = 80;
+            this.cbBlueWire.Text = "Blue Wire";
+            this.cbBlueWire.UseVisualStyleBackColor = true;
+            // 
+            // cbLED
+            // 
+            this.cbLED.AutoSize = true;
+            this.cbLED.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbLED.Location = new System.Drawing.Point(337, 204);
+            this.cbLED.Name = "cbLED";
+            this.cbLED.Size = new System.Drawing.Size(150, 49);
+            this.cbLED.TabIndex = 81;
+            this.cbLED.Text = "LED On";
+            this.cbLED.UseVisualStyleBackColor = true;
+            // 
+            // cbStar
+            // 
+            this.cbStar.AutoSize = true;
+            this.cbStar.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbStar.Location = new System.Drawing.Point(337, 280);
+            this.cbStar.Name = "cbStar";
+            this.cbStar.Size = new System.Drawing.Size(215, 49);
+            this.cbStar.TabIndex = 82;
+            this.cbStar.Text = "Star Present";
+            this.cbStar.UseVisualStyleBackColor = true;
+            // 
+            // frmComplicatedWires
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(905, 582);
+            this.Controls.Add(this.cbStar);
+            this.Controls.Add(this.cbLED);
+            this.Controls.Add(this.cbBlueWire);
+            this.Controls.Add(this.cbRedWire);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Name = "frmComplicatedWires";
+            this.Text = "Complicated Wires";
+            this.Controls.SetChildIndex(this.cbRedWire, 0);
+            this.Controls.SetChildIndex(this.cbBlueWire, 0);
+            this.Controls.SetChildIndex(this.cbLED, 0);
+            this.Controls.SetChildIndex(this.cbStar, 0);
+            this.Controls.SetChildIndex(this.btnSolve, 0);
+            this.Controls.SetChildIndex(this.btnStrike, 0);
+            this.Controls.SetChildIndex(this.btnBack, 0);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
     }
 
     #endregion
 
-    private Button btnBack;
-    private Button btnStrike;
-    private Button btnSolve;
-    private CheckBox cbRedWire;
-    private CheckBox cbBlueWire;
-    private CheckBox cbLED;
-    private CheckBox cbStar;
+    private System.Windows.Forms.CheckBox cbRedWire;
+    private System.Windows.Forms.CheckBox cbBlueWire;
+    private System.Windows.Forms.CheckBox cbLED;
+    private System.Windows.Forms.CheckBox cbStar;
 }

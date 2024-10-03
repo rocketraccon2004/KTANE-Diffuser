@@ -63,7 +63,7 @@ partial class frmEdgeworkMode
         promptLabel.Name = "promptLabel";
         promptLabel.Size = new Size(705, 25);
         promptLabel.TabIndex = 3;
-        promptLabel.Text = "Would you like to manually input the edgework or use the information in Edgework.txt?";
+        promptLabel.Text = "Would you like to manually input the edgework or use the information in Edgework.json?";
         // 
         // frmEdgeworkMode
         // 

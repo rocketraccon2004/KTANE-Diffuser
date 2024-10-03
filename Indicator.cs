@@ -2,7 +2,22 @@
 
 public struct Indicator
 {
-    public string name;
+    public IndicatorType name;
     public bool visible;
     public bool lit;
+}
+
+public enum IndicatorType
+{
+	SND,
+	CLR,
+	CAR,
+	IND,
+	FRQ,
+	SIG,
+	NSA,
+	FRK,
+	MSA,
+	TRN,
+	BOB
 }

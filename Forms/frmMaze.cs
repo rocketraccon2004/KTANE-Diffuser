@@ -1,4 +1,7 @@
-﻿namespace KTANE_Diffuser_Winforms.Forms;
+﻿using KTANE_Diffuser_Winforms.Modules;
+using Button = System.Windows.Forms.Button;
+
+namespace KTANE_Diffuser_Winforms.Forms;
 
 public partial class frmMaze : ModuleForm
 {
@@ -135,14 +138,6 @@ public partial class frmMaze : ModuleForm
     }
 
     /// <summary>
-    /// Sends the user back to the moduleSelection form
-    /// </summary>
-    private void backButton_Click(object sender, EventArgs e)
-    {
-        Program.switchForm(Utils.getMainForm());
-    }
-
-    /// <summary>
     /// Makes sure the user gave valid information to solve the
     /// maze module
     /// </summary>
@@ -198,10 +193,11 @@ public partial class frmMaze : ModuleForm
             }
         }
 
-        //if there isn't 1 player, the maze is invalid
-        if (playersFound != 1)
+		//if there isn't 1 player, the maze is invalid
+		if (playersFound != 1)
         {
-            Utils.throwError("There needs to be 1 player. Found " + playersFound);
+			MessageBox.Show("There needs to be 1 player. Found ", "Error - KTANE Diffuser", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			Utils.throwError("There needs to be 1 player. Found " + playersFound);
             return;
         }
 
@@ -352,15 +348,5 @@ public partial class frmMaze : ModuleForm
         Program.switchForm(answerForm);
 
         UpdateForm();
-    }
-
-    private void strikeButton_Click(object sender, EventArgs e)
-    {
-        if (ModifierKeys.HasFlag(Keys.Shift))
-        {
-            Assistant.instance.strikes--;
-            return;
-        }
-        Assistant.instance.strikes++;
     }
 }

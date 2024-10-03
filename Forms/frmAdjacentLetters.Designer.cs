@@ -28,232 +28,221 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnBack = new Button();
-            btnStrike = new Button();
-            btnSolve = new Button();
-            tableLayoutPanel1 = new TableLayoutPanel();
-            txt34 = new TextBox();
-            txt33 = new TextBox();
-            txt31 = new TextBox();
-            txt24 = new TextBox();
-            txt23 = new TextBox();
-            txt22 = new TextBox();
-            txt21 = new TextBox();
-            txt13 = new TextBox();
-            txt12 = new TextBox();
-            txt11 = new TextBox();
-            txt14 = new TextBox();
-            txt32 = new TextBox();
-            btnReset = new Button();
-            tableLayoutPanel1.SuspendLayout();
-            SuspendLayout();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.txt34 = new System.Windows.Forms.TextBox();
+            this.txt33 = new System.Windows.Forms.TextBox();
+            this.txt31 = new System.Windows.Forms.TextBox();
+            this.txt24 = new System.Windows.Forms.TextBox();
+            this.txt23 = new System.Windows.Forms.TextBox();
+            this.txt22 = new System.Windows.Forms.TextBox();
+            this.txt21 = new System.Windows.Forms.TextBox();
+            this.txt13 = new System.Windows.Forms.TextBox();
+            this.txt12 = new System.Windows.Forms.TextBox();
+            this.txt11 = new System.Windows.Forms.TextBox();
+            this.txt14 = new System.Windows.Forms.TextBox();
+            this.txt32 = new System.Windows.Forms.TextBox();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // btnBack
             // 
-            btnBack.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnBack.Location = new Point(31, 491);
-            btnBack.Margin = new Padding(5, 6, 5, 6);
-            btnBack.Name = "btnBack";
-            btnBack.Size = new Size(201, 84);
-            btnBack.TabIndex = 78;
-            btnBack.Text = "Back";
-            btnBack.UseVisualStyleBackColor = true;
-            btnBack.Click += btnBack_Click;
+            this.btnBack.Location = new System.Drawing.Point(13, 393);
+            this.btnBack.Size = new System.Drawing.Size(201, 64);
             // 
             // btnStrike
             // 
-            btnStrike.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnStrike.Location = new Point(262, 491);
-            btnStrike.Margin = new Padding(5, 6, 5, 6);
-            btnStrike.Name = "btnStrike";
-            btnStrike.Size = new Size(201, 84);
-            btnStrike.TabIndex = 77;
-            btnStrike.Text = "Strike";
-            btnStrike.UseVisualStyleBackColor = true;
-            btnStrike.Click += btnStrike_Click;
+            this.btnStrike.Location = new System.Drawing.Point(224, 393);
+            this.btnStrike.Size = new System.Drawing.Size(201, 64);
             // 
             // btnSolve
             // 
-            btnSolve.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnSolve.Location = new Point(491, 491);
-            btnSolve.Margin = new Padding(5, 6, 5, 6);
-            btnSolve.Name = "btnSolve";
-            btnSolve.Size = new Size(201, 84);
-            btnSolve.TabIndex = 76;
-            btnSolve.Text = "Solve";
-            btnSolve.UseVisualStyleBackColor = true;
-            btnSolve.Click += btnSolve_Click;
+            this.btnSolve.Location = new System.Drawing.Point(435, 393);
+            this.btnSolve.Size = new System.Drawing.Size(201, 67);
+            this.btnSolve.Click += new System.EventHandler(this.btnSolve_Click);
             // 
             // tableLayoutPanel1
             // 
-            tableLayoutPanel1.ColumnCount = 4;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel1.Controls.Add(txt34, 3, 2);
-            tableLayoutPanel1.Controls.Add(txt33, 2, 2);
-            tableLayoutPanel1.Controls.Add(txt31, 0, 2);
-            tableLayoutPanel1.Controls.Add(txt24, 3, 1);
-            tableLayoutPanel1.Controls.Add(txt23, 2, 1);
-            tableLayoutPanel1.Controls.Add(txt22, 1, 1);
-            tableLayoutPanel1.Controls.Add(txt21, 0, 1);
-            tableLayoutPanel1.Controls.Add(txt13, 2, 0);
-            tableLayoutPanel1.Controls.Add(txt12, 1, 0);
-            tableLayoutPanel1.Controls.Add(txt11, 0, 0);
-            tableLayoutPanel1.Controls.Add(txt14, 3, 0);
-            tableLayoutPanel1.Controls.Add(txt32, 1, 2);
-            tableLayoutPanel1.Location = new Point(124, 59);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 3;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel1.Size = new Size(649, 370);
-            tableLayoutPanel1.TabIndex = 79;
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Controls.Add(this.txt34, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txt33, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txt31, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txt24, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txt23, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txt22, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txt21, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txt13, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txt12, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txt11, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txt14, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txt32, 1, 2);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(112, 47);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(584, 296);
+            this.tableLayoutPanel1.TabIndex = 79;
             // 
             // txt34
             // 
-            txt34.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txt34.Location = new Point(489, 249);
-            txt34.Name = "txt34";
-            txt34.Size = new Size(155, 103);
-            txt34.TabIndex = 11;
-            txt34.TextAlign = HorizontalAlignment.Center;
+            this.txt34.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt34.Location = new System.Drawing.Point(441, 198);
+            this.txt34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt34.Name = "txt34";
+            this.txt34.Size = new System.Drawing.Size(140, 103);
+            this.txt34.TabIndex = 11;
+            this.txt34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt33
             // 
-            txt33.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txt33.Location = new Point(327, 249);
-            txt33.Name = "txt33";
-            txt33.Size = new Size(155, 103);
-            txt33.TabIndex = 10;
-            txt33.TextAlign = HorizontalAlignment.Center;
+            this.txt33.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt33.Location = new System.Drawing.Point(295, 198);
+            this.txt33.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt33.Name = "txt33";
+            this.txt33.Size = new System.Drawing.Size(140, 103);
+            this.txt33.TabIndex = 10;
+            this.txt33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt31
             // 
-            txt31.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txt31.Location = new Point(3, 249);
-            txt31.Name = "txt31";
-            txt31.Size = new Size(155, 103);
-            txt31.TabIndex = 8;
-            txt31.TextAlign = HorizontalAlignment.Center;
+            this.txt31.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt31.Location = new System.Drawing.Point(3, 198);
+            this.txt31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt31.Name = "txt31";
+            this.txt31.Size = new System.Drawing.Size(140, 103);
+            this.txt31.TabIndex = 8;
+            this.txt31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt24
             // 
-            txt24.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txt24.Location = new Point(489, 126);
-            txt24.Name = "txt24";
-            txt24.Size = new Size(155, 103);
-            txt24.TabIndex = 7;
-            txt24.TextAlign = HorizontalAlignment.Center;
+            this.txt24.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt24.Location = new System.Drawing.Point(441, 100);
+            this.txt24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt24.Name = "txt24";
+            this.txt24.Size = new System.Drawing.Size(140, 103);
+            this.txt24.TabIndex = 7;
+            this.txt24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt23
             // 
-            txt23.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txt23.Location = new Point(327, 126);
-            txt23.Name = "txt23";
-            txt23.Size = new Size(155, 103);
-            txt23.TabIndex = 6;
-            txt23.TextAlign = HorizontalAlignment.Center;
+            this.txt23.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt23.Location = new System.Drawing.Point(295, 100);
+            this.txt23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt23.Name = "txt23";
+            this.txt23.Size = new System.Drawing.Size(140, 103);
+            this.txt23.TabIndex = 6;
+            this.txt23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt22
             // 
-            txt22.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txt22.Location = new Point(165, 126);
-            txt22.Name = "txt22";
-            txt22.Size = new Size(155, 103);
-            txt22.TabIndex = 5;
-            txt22.TextAlign = HorizontalAlignment.Center;
+            this.txt22.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt22.Location = new System.Drawing.Point(149, 100);
+            this.txt22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt22.Name = "txt22";
+            this.txt22.Size = new System.Drawing.Size(140, 103);
+            this.txt22.TabIndex = 5;
+            this.txt22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt21
             // 
-            txt21.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txt21.Location = new Point(3, 126);
-            txt21.Name = "txt21";
-            txt21.Size = new Size(155, 103);
-            txt21.TabIndex = 4;
-            txt21.TextAlign = HorizontalAlignment.Center;
+            this.txt21.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt21.Location = new System.Drawing.Point(3, 100);
+            this.txt21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt21.Name = "txt21";
+            this.txt21.Size = new System.Drawing.Size(140, 103);
+            this.txt21.TabIndex = 4;
+            this.txt21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt13
             // 
-            txt13.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txt13.Location = new Point(327, 3);
-            txt13.Name = "txt13";
-            txt13.Size = new Size(155, 103);
-            txt13.TabIndex = 2;
-            txt13.TextAlign = HorizontalAlignment.Center;
+            this.txt13.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt13.Location = new System.Drawing.Point(295, 2);
+            this.txt13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt13.Name = "txt13";
+            this.txt13.Size = new System.Drawing.Size(140, 103);
+            this.txt13.TabIndex = 2;
+            this.txt13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt12
             // 
-            txt12.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txt12.Location = new Point(165, 3);
-            txt12.Name = "txt12";
-            txt12.Size = new Size(155, 103);
-            txt12.TabIndex = 1;
-            txt12.TextAlign = HorizontalAlignment.Center;
+            this.txt12.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt12.Location = new System.Drawing.Point(149, 2);
+            this.txt12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt12.Name = "txt12";
+            this.txt12.Size = new System.Drawing.Size(140, 103);
+            this.txt12.TabIndex = 1;
+            this.txt12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt11
             // 
-            txt11.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txt11.Location = new Point(3, 3);
-            txt11.Name = "txt11";
-            txt11.Size = new Size(155, 103);
-            txt11.TabIndex = 0;
-            txt11.TextAlign = HorizontalAlignment.Center;
+            this.txt11.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt11.Location = new System.Drawing.Point(3, 2);
+            this.txt11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt11.Name = "txt11";
+            this.txt11.Size = new System.Drawing.Size(140, 103);
+            this.txt11.TabIndex = 0;
+            this.txt11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt14
             // 
-            txt14.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txt14.Location = new Point(489, 3);
-            txt14.Name = "txt14";
-            txt14.Size = new Size(155, 103);
-            txt14.TabIndex = 3;
-            txt14.TextAlign = HorizontalAlignment.Center;
+            this.txt14.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt14.Location = new System.Drawing.Point(441, 2);
+            this.txt14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt14.Name = "txt14";
+            this.txt14.Size = new System.Drawing.Size(140, 103);
+            this.txt14.TabIndex = 3;
+            this.txt14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt32
             // 
-            txt32.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txt32.Location = new Point(165, 249);
-            txt32.Name = "txt32";
-            txt32.Size = new Size(155, 103);
-            txt32.TabIndex = 9;
-            txt32.TextAlign = HorizontalAlignment.Center;
+            this.txt32.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt32.Location = new System.Drawing.Point(149, 198);
+            this.txt32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt32.Name = "txt32";
+            this.txt32.Size = new System.Drawing.Size(140, 103);
+            this.txt32.TabIndex = 9;
+            this.txt32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnReset
             // 
-            btnReset.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnReset.Location = new Point(717, 491);
-            btnReset.Margin = new Padding(5, 6, 5, 6);
-            btnReset.Name = "btnReset";
-            btnReset.Size = new Size(201, 84);
-            btnReset.TabIndex = 80;
-            btnReset.Text = "Reset";
-            btnReset.UseVisualStyleBackColor = true;
-            btnReset.Click += btnReset_Click;
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Location = new System.Drawing.Point(645, 393);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(181, 67);
+            this.btnReset.TabIndex = 80;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
             // 
             // frmAdjacentLetters
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(962, 590);
-            Controls.Add(btnReset);
-            Controls.Add(tableLayoutPanel1);
-            Controls.Add(btnBack);
-            Controls.Add(btnStrike);
-            Controls.Add(btnSolve);
-            Name = "frmAdjacentLetters";
-            Text = "Adjacent Letters";
-            tableLayoutPanel1.ResumeLayout(false);
-            tableLayoutPanel1.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(866, 472);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "frmAdjacentLetters";
+            this.Text = "Adjacent Letters";
+            this.Controls.SetChildIndex(this.tableLayoutPanel1, 0);
+            this.Controls.SetChildIndex(this.btnReset, 0);
+            this.Controls.SetChildIndex(this.btnSolve, 0);
+            this.Controls.SetChildIndex(this.btnStrike, 0);
+            this.Controls.SetChildIndex(this.btnBack, 0);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
-
-        private Button btnBack;
-        private Button btnStrike;
-        private Button btnSolve;
         private TableLayoutPanel tableLayoutPanel1;
         private TextBox txt34;
         private TextBox txt33;
